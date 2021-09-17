@@ -2,6 +2,7 @@ import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Flex, Heading, Spacer, VStack } from "@chakra-ui/layout";
 import {FaSun, FaMoon, FaInstagram, FaGithub, FaLinkedin} from 'react-icons/fa'
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
@@ -27,6 +28,7 @@ function App() {
       <Socials/>
       <Projects/>
       <Profile/>
+      <Footer/>
      
     </VStack> 
   );

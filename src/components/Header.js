@@ -3,7 +3,6 @@ import { Button, Image } from '@chakra-ui/react'
 import { Circle, Stack, Flex, Box, Text } from '@chakra-ui/layout';
 import { useMediaQuery } from '@chakra-ui/media-query';
 import React from 'react'
-import profile from './avatars.png';
 
 function Header() {
 
@@ -30,12 +29,12 @@ function Header() {
                 <Button mt={8}>Resume</Button>
 
              </Box>
-             <Image
+             {/* <Image
                     alignSelf="center" mt={isNotSmallScreen ? "0" : "12"}
                     mb = {isNotSmallScreen ? "0" : "12"} borderRadius="full"
                     backgroundColor="transparent" boxShadow="lg"
-                    boxSize="300px" src={profile}
-                /> 
+                    boxSize="300px" 
+                />  */}
                         
             </Flex>
 
