@@ -17,14 +17,16 @@ import linkedin from '../config/img/linkedin.png';
 import gmailclone from '../config/img/gmail.png';
 import imageuploader from '../config/img/javas3.png';
 import jamadesigns from '../config/img/jamadesigns.png';
+import { SimpleGrid } from "@chakra-ui/react"
+
 
 
 function Project({ title, desc, tech, colorMode, image_url }) {
   return (
     <Stack marginBottom={5}>
-      <Heading as="h4" size="md" color={useColorModeValue('black')}>
+      <Heading as="h4" size="md" color={useColorModeValue('white, black')}>
         <Flex alignItems="center">
-          <Text as="span" color={useColorModeValue('black')} paddingBottom="10px" fontWeight="300px">
+          <Text as="span" color={useColorModeValue('black, white')} paddingBottom="10px" fontWeight="300px">
             {title}
           </Text>
         </Flex>
@@ -54,7 +56,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         <Box w="100%">
           <Stack mt={2} pl={[0, 4, 4, 4]}>
             <Text
-              fontSize="lg"
+              fontSize="md"
               fontWeight="semibold"
               lineHeight="short"
               color={useColorModeValue("black")}
@@ -69,8 +71,9 @@ function Project({ title, desc, tech, colorMode, image_url }) {
                   key={tag}
                   color="#4299E1"
                   fontWeight="bold"
-                  color={'grey'}
-                  bgColor={'grey'}
+                  color={'blue'}
+                  bgColor={'white'}
+                  xs
                 >
                   {tag}
                 </Tag>
@@ -119,11 +122,11 @@ const Projects = () => {
     <Stack
       as="main"
       padding="1.5rem"
-      color={useColorModeValue("white")}
+      color={useColorModeValue("white, black")}
     //   backgroundColor={`mode.${colorMode}.background`}
       marginLeft="auto"
       marginRight="auto"
-      maxWidth="60rem"
+      maxWidth="72rem"
       paddingTop="3rem"
     >
     <Text fontSize="4xl" mb ="10px" fontWeight="extrabold">Projects</Text>

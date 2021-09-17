@@ -34,7 +34,7 @@ const Footer = props => {
       {...props}
     >
       <Text marginRight="24px">
-      Built by Abdirahman Jama ©{year}
+      Abdirahman Jama © {year}
       </Text>
       {siteConfig.author.accounts.map(sc => (
         <IconButton

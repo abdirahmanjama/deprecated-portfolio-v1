@@ -11,11 +11,11 @@ function Skills() {
 <Stack
       as="main"
   padding="1.5rem"
-      color={useColorModeValue("white")}
+      color={useColorModeValue("white, black")}
     //   backgroundColor={`mode.${colorMode}.background`}
       marginLeft="auto"
       marginRight="auto"
-      maxWidth="60rem"
+      maxWidth="72rem"
     
     >
              <Text fontSize="4xl" mb ="10px" fontWeight="extrabold">Skills</Text>

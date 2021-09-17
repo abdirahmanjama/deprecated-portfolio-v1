@@ -20,13 +20,6 @@ const siteConfig = {
         icon: <FaGithub />
       },
       {
-        key: '2',
-        url: 'https://instagram.com/abdirahmancodes',
-        label: 'Instagram',
-        type: 'instagram',
-        icon: <FaTwitter />
-      },
-      {
         key: '3',
         url: 'https://abdirahman-jama.medium.com/',
         label: 'Medium',

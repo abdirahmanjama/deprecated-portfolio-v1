@@ -11,6 +11,7 @@ function Skill({ name, icon, description }) {
             rounded="xl"
             borderWidth="1px"
             borderColor={useColorModeValue("gray.100", "gray.700")}
+            
             w="100%"
             textAlign="left"
             align="start"
@@ -22,6 +23,7 @@ function Skill({ name, icon, description }) {
               p={2}
               position="relative"
               overflow="hidden"
+              color='black'
               lineHeight={0}
               boxShadow="inset 0 0 1px 1px rgba(0, 0, 0, 0.015)"
             >
@@ -53,7 +55,7 @@ function Skill({ name, icon, description }) {
                 </Text>
                 <Text
                   fontSize="sm"
-                  color={useColorModeValue("gray.500", "gray.200")}
+                  color={useColorModeValue("black")}
                 >
                   {description}
                 </Text>
