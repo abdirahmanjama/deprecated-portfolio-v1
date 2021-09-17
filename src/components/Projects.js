@@ -12,14 +12,12 @@ import {
   Skeleton,
   AspectRatio,
   useColorModeValue,
-  Spacer,
   useMediaQuery,
 } from "@chakra-ui/react";
 import linkedin from "../config/img/linkedin.png";
 import gmailclone from "../config/img/gmail.png";
 import imageuploader from "../config/img/javas3.png";
 import jamadesigns from "../config/img/jamadesigns.png";
-import { SimpleGrid } from "@chakra-ui/react";
 
 function setTagColour(tag){
   switch(tag){

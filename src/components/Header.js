@@ -1,21 +1,12 @@
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode'
-import { useMediaQuery } from '@chakra-ui/media-query';
 import React from 'react'
 import { Spacer } from "@chakra-ui/layout";
-import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   Stack,
   Image,
@@ -80,8 +71,6 @@ export default function Header() {
           </Box>
         ) : null}
       </Box>
-
-      <Box p={4}>Main Content Here</Box>
 
      
     </>
