@@ -1,4 +1,3 @@
-import { useColorMode } from "@chakra-ui/color-mode";
 import { VStack } from "@chakra-ui/layout";
 
 import Footer from "./components/Footer";
