@@ -1,10 +1,9 @@
 import React from 'react';
 import {
   FaGithub,
-  FaDev,
   FaLinkedin,
-  FaQuora,
-  FaTwitter
+  FaTwitter,
+  FaMedium
 } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
@@ -29,7 +28,7 @@ const siteConfig = {
         url: 'https://medium.com/abdirahman-jama',
         label: 'Medium',
         type: 'gray',
-        icon: <FaDev />
+        icon: <FaMedium />
       },
       {
         url: 'https://www.linkedin.com/in/abdirahman-jama-b3204412b/',

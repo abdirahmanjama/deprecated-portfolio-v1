@@ -10,7 +10,8 @@ import {
   useColorMode,
   Grid,
   Skeleton,
-  AspectRatio
+  AspectRatio,
+  useColorModeValue
 } from '@chakra-ui/react';
 import peterpitch_img from '../config/img/linkedin.png';
 import workof_img from '../config/img/gmail.png';
@@ -21,9 +22,9 @@ import souq_img from '../config/img/jamadesigns.png';
 function Project({ title, desc, tech, colorMode, image_url }) {
   return (
     <Stack marginBottom={5}>
-      <Heading as="h4" size="md" color={`mode.${colorMode}.career.text`}>
+      <Heading as="h4" size="md" color={useColorModeValue('black')}>
         <Flex alignItems="center">
-          <Text as="span" color={`mode.${colorMode}.career.text`}>
+          <Text as="span" color={useColorModeValue('black')}>
             {title}
           </Text>
         </Flex>
@@ -36,7 +37,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         _hover={{ shadow: 'md' }}
         borderWidth="1px"
         borderColor={`mode.${colorMode}.border`}
-        backgroundColor={`mode.${colorMode}.cardBG`}
+        backgroundColor={useColorModeValue("white")}
         position="relative"
         rounded="md"
       >
@@ -56,7 +57,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
               fontSize="lg"
               fontWeight="semibold"
               lineHeight="short"
-              color={`mode.${colorMode}.subtext`}
+              color={useColorModeValue("black")}
             >
               {desc}
             </Text>
@@ -68,8 +69,8 @@ function Project({ title, desc, tech, colorMode, image_url }) {
                   key={tag}
                   color="#4299E1"
                   fontWeight="bold"
-                  color={`mode.${colorMode}.career.subtext`}
-                  bgColor={`mode.${colorMode}.career.tagBG`}
+                  color={'grey'}
+                  bgColor={'grey'}
                 >
                   {tag}
                 </Tag>
@@ -89,40 +90,44 @@ const Projects = () => {
       title: 'LinkedIn Clone',
       desc: `I spent a few weekends this year working on this beast. I developed a LinkedIn clone that uses a firebase backend. This clone allows users to login, post statuses and message each other via the app!`,
       tech: 'react, redux, styled components, javascript',
-      image_url: peterpitch_img
+      image_url: peterpitch_img,
+      color: 'blue'
     },
     {
       title: 'Gmail Clone',
       desc: `This is a gmail clone that allows users to send, view and delete messages.`,
       tech: 'react, redux, javascript',
-      image_url: notch_img
+      image_url: notch_img,
+      color: 'yellow'
     },
     {
       title: 'Image Uploader',
       desc: `I developed a reusable web component that enables users to upload images directly to S3 via the web`,
       tech: 'react, aws, java, spring boot',
-      image_url: workof_img
+      image_url: workof_img,
+      color: 'green'
     },
     {
       title: 'JamaDesigns',
       desc: `In early 2021, I have launched a digital marketing agency that provides tech services to local businesses around east London. I've helped businesses increase their customer retention by 45%!`,
       tech: 'react, axios, redux',
-      image_url: souq_img
+      image_url: souq_img,
+      color: 'black'
     }
   ];
   return (
     <Stack
       as="main"
       padding="1.5rem"
-      color="white"
-      backgroundColor={`mode.${colorMode}.background`}
+      color={useColorModeValue("white")}
+    //   backgroundColor={`mode.${colorMode}.background`}
       marginLeft="auto"
       marginRight="auto"
-      maxWidth="48rem"
+      maxWidth="60rem"
       paddingTop="3rem"
     >
     <Text fontSize="4xl" mb ="10px" fontWeight="extrabold">Projects</Text>
-      <Stack spacing={2}>
+      <Stack spacing={2} >
         {projects.map((project, index) => (
           <Project
             key={index}
