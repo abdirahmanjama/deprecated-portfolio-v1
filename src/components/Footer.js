@@ -21,6 +21,7 @@ const Footer = props => {
     >
       {siteConfig.author.accounts.map(sc => (
         <IconButton
+          
           as={Link}
           isExternal
           href={sc.url}

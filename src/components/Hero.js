@@ -1,13 +1,14 @@
+import { Image } from '@chakra-ui/image'
 import { Center, Container, Heading, Link, Text, Stack } from '@chakra-ui/layout'
 import { chakra, useColorModeValue } from '@chakra-ui/system'
 import React from 'react'
 
 
 function Hero() {
-      const bgColor = useColorModeValue('green.100', 'green.100')
+  const bgColor = useColorModeValue('green.100', 'green.100')
   const color = useColorModeValue('black', 'black')
-    return (
 
+    return (
         <Stack
         as="main"
         padding="1.5rem"
@@ -17,19 +18,26 @@ function Hero() {
         marginRight="auto"
         maxWidth="60rem"
         paddingTop="3rem"
+        
       >
-        <Container h={{ sm: '70vh', md: '70vh', lg: '50vh' }} maxW='6xl'>
-      <Center my={20} w='auto'>
+    <Container  maxW='6xl'>
+      <Center mt={20} w='auto'>
+
+
         <Heading as='h1' fontSize={['4xl', '5xl', '6xl', '8xl']} letterSpacing={2} lineHeight={1.2}>
           I design & build beautiful web{' '}
           <Text bg={bgColor} color={color} w='auto' display='inline'>
             experiences
           </Text>
         </Heading>
-      </Center>
 
-      
-  
+      </Center>  
+      <chakra.div>
+        <Text fontSize='lg'>Software Engineer</Text>
+        <Link>
+          @abdirahmancodes
+        </Link>
+      </chakra.div>
     </Container>
     </Stack>
     )

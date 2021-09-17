@@ -13,24 +13,28 @@ const siteConfig = {
     name: 'Abdirahman Jama',
     accounts: [
       {
+        key: '1',
         url: 'https://github.com/abdirahmanjama',
         label: 'Github Account',
         type: 'gray',
         icon: <FaGithub />
       },
       {
+        key: '2',
         url: 'https://instagram.com/abdirahmancodes',
         label: 'Instagram',
         type: 'instagram',
         icon: <FaTwitter />
       },
       {
-        url: 'https://medium.com/abdirahman-jama',
+        key: '3',
+        url: 'https://abdirahman-jama.medium.com/',
         label: 'Medium',
         type: 'gray',
         icon: <FaMedium />
       },
       {
+        key: '4',
         url: 'https://www.linkedin.com/in/abdirahman-jama-b3204412b/',
         label: 'LinkedIn Account',
         type: 'linkedin',
@@ -38,6 +42,7 @@ const siteConfig = {
       },
       
       {
+        key: '5',
         url: 'mailto:abdirahman.jamaaa@gmail.com',
         label: 'Mail Abdirahman',
         type: 'gray',

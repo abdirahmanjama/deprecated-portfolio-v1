@@ -24,14 +24,14 @@ function Project({ title, desc, tech, colorMode, image_url }) {
     <Stack marginBottom={5}>
       <Heading as="h4" size="md" color={useColorModeValue('black')}>
         <Flex alignItems="center">
-          <Text as="span" color={useColorModeValue('black')}>
+          <Text as="span" color={useColorModeValue('black')} paddingBottom="10px" fontWeight="300px">
             {title}
           </Text>
         </Flex>
       </Heading>
       <Grid
-        // templateColumns="repeat(2, 1fr)"
-        gridTemplateColumns={['1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
+        templateColumns="repeat(2, 1fr)"
+        //gridTemplateColumns={['1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
         gap={2}
         p={5}
         _hover={{ shadow: 'md' }}
