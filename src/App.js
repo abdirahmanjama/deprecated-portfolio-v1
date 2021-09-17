@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+{/* TODO: Add navigation, add blog*/}
 function App() {
   return (
     <Router>
