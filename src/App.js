@@ -5,7 +5,6 @@ import {FaSun, FaMoon, FaInstagram, FaGithub, FaLinkedin, FaReact, FaDatabase, F
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Skill from "./components/Skill";
 import Skills from "./components/Skills";
@@ -27,7 +26,7 @@ function App() {
       <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>
      
       </Flex> */}
-      
+      <Header/>
       <Hero/>
       <Skills/>
       <Projects/>

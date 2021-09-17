@@ -13,10 +13,10 @@ import {
   AspectRatio,
   useColorModeValue
 } from '@chakra-ui/react';
-import peterpitch_img from '../config/img/linkedin.png';
-import workof_img from '../config/img/gmail.png';
-import notch_img from '../config/img/javas3.png';
-import souq_img from '../config/img/jamadesigns.png';
+import linkedin from '../config/img/linkedin.png';
+import gmailclone from '../config/img/gmail.png';
+import imageuploader from '../config/img/javas3.png';
+import jamadesigns from '../config/img/jamadesigns.png';
 
 
 function Project({ title, desc, tech, colorMode, image_url }) {
@@ -90,28 +90,28 @@ const Projects = () => {
       title: 'LinkedIn Clone',
       desc: `I spent a few weekends this year working on this beast. I developed a LinkedIn clone that uses a firebase backend. This clone allows users to login, post statuses and message each other via the app!`,
       tech: 'react, redux, styled components, javascript',
-      image_url: peterpitch_img,
+      image_url: linkedin,
       color: 'blue'
     },
     {
       title: 'Gmail Clone',
       desc: `This is a gmail clone that allows users to send, view and delete messages.`,
       tech: 'react, redux, javascript',
-      image_url: notch_img,
+      image_url: gmailclone ,
       color: 'yellow'
     },
     {
       title: 'Image Uploader',
       desc: `I developed a reusable web component that enables users to upload images directly to S3 via the web`,
       tech: 'react, aws, java, spring boot',
-      image_url: workof_img,
+      image_url: imageuploader,
       color: 'green'
     },
     {
       title: 'JamaDesigns',
       desc: `In early 2021, I have launched a digital marketing agency that provides tech services to local businesses around east London. I've helped businesses increase their customer retention by 45%!`,
       tech: 'react, axios, redux',
-      image_url: souq_img,
+      image_url: jamadesigns,
       color: 'black'
     }
   ];

@@ -1,6 +1,8 @@
 import React from 'react';
-import { Stack, IconButton, Link } from '@chakra-ui/react';
+import { Stack, IconButton, Link, Flex, useColorModeValue, Spacer, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react'
 import siteConfig from '../config/site-config';
+import { NavLink } from 'react-router-dom';
 
 const iconProps = {
   variant: 'ghost',
@@ -9,7 +11,19 @@ const iconProps = {
 };
 
 const Footer = props => {
+  const footColor = useColorModeValue('gray.200', 'gray.800')
+  const year = new Date().getFullYear() || '2021'
   return (
+    <Flex
+    as='footer'
+    // h={24}
+    // justifyContent='center'
+    borderTop='1px'
+    // alignItems='center'
+    // flexDirection='column'
+    
+    >
+  
     <Stack
       as="footer"
       isInline
@@ -19,6 +33,9 @@ const Footer = props => {
       alignItems="center"
       {...props}
     >
+      <Text marginRight="24px">
+      Built by Abdirahman Jama ©{year}
+      </Text>
       {siteConfig.author.accounts.map(sc => (
         <IconButton
           
@@ -33,6 +50,8 @@ const Footer = props => {
         />
       ))}
     </Stack>
+ 
+  </Flex>
   );
 };
 
