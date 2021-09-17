@@ -4,6 +4,7 @@ import { Flex, Heading, Spacer, VStack } from "@chakra-ui/layout";
 import {FaSun, FaMoon, FaInstagram, FaGithub, FaLinkedin} from 'react-icons/fa'
 import Header from "./components/Header";
 import Profile from "./components/Profile";
+import Projects from "./components/Projects";
 import Socials from "./components/Socials";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       </Flex>
        <Header/>
       <Socials/>
+      <Projects/>
       <Profile/>
      
     </VStack> 
