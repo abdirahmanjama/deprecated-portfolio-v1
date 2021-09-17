@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skill from "./components/Skill";
 import Skills from "./components/Skills";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
 
 function App() {
 
@@ -16,8 +17,8 @@ function App() {
 
   return (
     //vstack allows us to have a column from top to vottom 
-    
-    <VStack>
+    <Router>
+      <VStack>
       {/* <Flex w="100%">
       <Heading ml="8" size="md" fontweight='semibold' color='cyan.400'>abdirahman jama</Heading>
 
@@ -26,13 +27,23 @@ function App() {
       <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>
      
       </Flex> */}
+      
       <Header/>
       <Hero/>
+      <Switch>
+      <Route path = "/">
+      </Route>
+      <Route path="/blogs">
+      </Route>
+      </Switch>
       <Skills/>
       <Projects/>
       <Footer/> 
      
+     
     </VStack> 
+    </Router>
+ 
   );
 }
 

@@ -13,17 +13,18 @@ function Hero() {
     return (
         <Stack
         as="main"
-        padding="1.5rem"
+  
         color={useColorModeValue("white, black")}
       //   backgroundColor={`mode.${colorMode}.background`}
         marginLeft="auto"
         marginRight="auto"
         maxWidth="72rem"
         paddingTop="3rem"
+     
         
       >
-    <Container  maxW='6xl'>
-      <Center mt={20} w='auto'>
+    <Container  maxW='6xl' mb={10}>
+      <Center mt={20} w='auto' mb={5}>
         <Heading as='h1' fontSize={['4xl', '5xl', '6xl', '8xl']} letterSpacing={2} lineHeight={1.2}>
           I design & develop beautiful user {' '}
           <Text bg={bgColor} color={color} w='auto' display='inline'>

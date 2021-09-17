@@ -25,10 +25,6 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import avatar from '../config/img/avatars.png'
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-
-
-
-
 const NavLink = () => (
   
   <Link
