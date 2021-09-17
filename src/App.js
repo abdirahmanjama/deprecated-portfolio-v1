@@ -20,11 +20,12 @@ function App() {
       <Spacer></Spacer>
 
       <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>
-      
+     
       </Flex>
-      <Header/>
+       <Header/>
       <Socials/>
       <Profile/>
+     
     </VStack> 
   );
 }
