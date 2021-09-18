@@ -88,16 +88,14 @@ function Project({ title, desc, tech, colorMode, image_url }) {
 >
 
          
-          <AspectRatio ratio={1.85 / 1} w="100%" borderBottomWidth="1px">
             <Image
               rounded="md"
-              src={image_url ? image_url : "https://bit.ly/2k1H1t6"}
+              src={image_url}
               fallback={<Skeleton />}
               objectFit="cover"
               mb={!isNotMobile && "0"}
 
             />
-          </AspectRatio>
         </Flex>
         <Box w="100%">
           
