@@ -11,14 +11,14 @@ import { chakra, useColorModeValue } from "@chakra-ui/system";
 import React from "react";
 import './Hero.css'
 import TextTransition, { presets } from "react-text-transition";
+import { useMediaQuery } from "@chakra-ui/media-query";
 
 
 function Hero() {
   const bgColor = useColorModeValue("yellow.300", "yellow.300");
   const color = useColorModeValue("black", "black");
   const [index, setIndex] = React.useState(0);
-
-  
+  const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
   const TASKS = [
     "Software Engineer",
@@ -38,11 +38,11 @@ function Hero() {
       as="main"
       color={useColorModeValue("white, black")}
       ml="0"
-      paddingTop="10"
+      paddingTop={isNotMobile ? 10 : 0}
      
     >
       <Container maxW="6xl" mb={10}>
-        <Center mt={20} w="auto" mb={5}>
+        <Center mt={isNotMobile ? 20 : 7} w="auto" mb={5}>
         <Heading
             as="h1"
             fontSize={["4xl", "5xl", "6xl", "7xl"]}

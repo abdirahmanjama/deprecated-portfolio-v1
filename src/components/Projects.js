@@ -42,9 +42,6 @@ function Projects() {
       
     return (
         <Stack
-        as="main"
-        margin ="0"
-        padding="0"
         >
           <Text fontSize={"3xl"} mb="10px" fontWeight="extrabold" mb="5">
             Projects
