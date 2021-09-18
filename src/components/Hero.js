@@ -22,8 +22,8 @@ function Hero() {
 
   const TASKS = [
     "Software Engineer",
-    "Student",
-    "Designer",
+    "Content Creator",
+    "Writer",
    
   ];
   React.useEffect(() => {

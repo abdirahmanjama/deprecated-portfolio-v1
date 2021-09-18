@@ -54,6 +54,8 @@ function setBgColour(tag) {
 }
 
 function Project({ title, desc, tech, colorMode, image_url }) {
+  const [isNotMobile] = useMediaQuery("(min-width:760px)");
+
   return (
     <Stack marginBottom={5}>
       <Heading
@@ -62,7 +64,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         color={useColorModeValue("grey.100, grey.700")}
       ></Heading>
       <Grid
-        templateColumns="repeat(2, 1fr)"
+        templateColumns= {isNotMobile ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
         //gridTemplateColumns={['1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
         gap={2}
         p={5}
@@ -73,7 +75,16 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         position="relative"
         rounded="md"
       >
+         {!isNotMobile &&  <Text
+              as="span"
+              fontWeight="300px"
+              fontWeight="bold"
+              fontSize="md"
+            >
+              {title}
+            </Text>}
         <Flex w="100%" h="100%" alignItems="center">
+         
           <AspectRatio ratio={1.85 / 1} w="100%" borderBottomWidth="1px">
             <Image
               rounded="md"
@@ -84,16 +95,17 @@ function Project({ title, desc, tech, colorMode, image_url }) {
           </AspectRatio>
         </Flex>
         <Box w="100%">
+          
           <Stack  pl={[0, 4, 4, 4]}>
+            { isNotMobile &&
             <Text
               as="span"
-              color={useColorModeValue("black, white")}
               fontWeight="300px"
               fontWeight="bold"
               fontSize="md"
             >
               {title}
-            </Text>
+            </Text>}
             <Text
               fontSize="sm"
               color={useColorModeValue("black")}
