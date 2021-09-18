@@ -19,57 +19,48 @@ import gmailclone from "../config/img/gmail.png";
 import imageuploader from "../config/img/javas3.png";
 import jamadesigns from "../config/img/jamadesigns.png";
 
-function setTagColour(tag){
-  switch(tag){
-    case 'react':
-      return 'cyan.100'
-    case 'java':
-      return 'red.100'
-    case 'spring boot': 
-      return 'green.100'
-    case 'aws':
-      return 'yellow.100'
-    case 'javascript':
-      return 'white.900'
-    case 'firebase':
-      return 'orange.100'
+function setTagColour(tag) {
+  switch (tag) {
+    case "react":
+      return "cyan.100";
+    case "java":
+      return "red.100";
+    case "spring boot":
+      return "green.100";
+    case "aws":
+      return "yellow.100";
+    case "javascript":
+      return "white.900";
+    case "firebase":
+      return "orange.100";
   }
 }
 
-  function setBgColour(tag){
-    switch(tag){
-      case 'react':
-        return 'cyan.700'
-      case 'java':
-        return 'red.700'
-      case 'springboot': 
-        return 'green.700'
-      case 'aws':
-        return 'yellow.500'
-      case 'javascript':
-        return 'yellow.400'
-        case 'firebase':
-          return 'orange.500'
-    }
-    
+function setBgColour(tag) {
+  switch (tag) {
+    case "react":
+      return "cyan.700";
+    case "java":
+      return "red.700";
+    case "springboot":
+      return "green.700";
+    case "aws":
+      return "yellow.500";
+    case "javascript":
+      return "yellow.400";
+    case "firebase":
+      return "orange.500";
   }
-
+}
 
 function Project({ title, desc, tech, colorMode, image_url }) {
   return (
     <Stack marginBottom={5}>
-      <Heading as="h4" size="md" color={useColorModeValue("grey.100, grey.700")}>
-        <Flex alignItems="center">
-          <Text
-            as="span"
-            color={useColorModeValue("black, white")}
-            paddingBottom="10px"
-            fontWeight="300px"
-          >
-            {title}
-          </Text>
-        </Flex>
-      </Heading>
+      <Heading
+        as="h4"
+        size="md"
+        color={useColorModeValue("grey.100, grey.700")}
+      ></Heading>
       <Grid
         templateColumns="repeat(2, 1fr)"
         //gridTemplateColumns={['1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
@@ -93,10 +84,19 @@ function Project({ title, desc, tech, colorMode, image_url }) {
           </AspectRatio>
         </Flex>
         <Box w="100%">
-          <Stack mt={2} pl={[0, 4, 4, 4]}>
+          <Stack  pl={[0, 4, 4, 4]}>
             <Text
+              as="span"
+              color={useColorModeValue("black, white")}
+              fontWeight="300px"
+              fontWeight="bold"
               fontSize="md"
-              fontWeight="semibold"
+            >
+              {title}
+            </Text>
+            <Text
+              fontSize="sm"
+              color={useColorModeValue("black")}
               lineHeight="short"
               color={useColorModeValue("black")}
               borderColor={useColorModeValue("gray.700", "gray.700")}
@@ -104,10 +104,8 @@ function Project({ title, desc, tech, colorMode, image_url }) {
               {desc}
             </Text>
             <Stack isInline>
-              
               {tech.split(",").map((tag) => (
                 <Tag
-
                   size="sm"
                   padding="0 3px"
                   key={tag}
@@ -115,7 +113,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
                   fontWeight="bold"
                   color={setTagColour(tag.toLowerCase())}
                   bgColor={setBgColour(tag.toLowerCase())}
-                  xs
+                  
                 >
                   {tag}
                 </Tag>
@@ -147,7 +145,7 @@ const Projects = () => {
     },
     {
       title: "Image Uploader",
-      desc: `Developed a web application that enables users to upload images directly to S3 which in turn gets pushed to an endpoint.`,
+      desc: `Developed an application that enables users to upload images directly to the UI via S3`,
       tech: "react,aws,java,springboot",
       image_url: imageuploader,
       color: "green",
@@ -160,24 +158,19 @@ const Projects = () => {
       color: "black",
     },
   ];
-  const [isNotMobile] = useMediaQuery("(min-width:720px)");
+  const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
   return (
     <Box
-      //   backgroundColor={`mode.${colorMode}.background`}
-      marginLeft="auto"
-      marginRight="auto"
-      maxWidth="72rem"
-      paddingTop="3rem"
-
+    //   backgroundColor={`mode.${colorMode}.background`}
     >
-      <Text fontSize="4xl" mb="10px" fontWeight="extrabold">
+      <Text fontSize={"3xl"} mb="10px" fontWeight="extrabold" mb="5">
         Projects
       </Text>
 
       <Grid
         templateColumns={isNotMobile ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
-        gap={2} 
+        gap={2}
       >
         {projects.map((project, index) => (
           <Project
@@ -186,8 +179,7 @@ const Projects = () => {
             desc={project.desc}
             tech={project.tech}
             image_url={project.image_url}
-            borderColor='red'
-
+            borderColor="red"
           />
         ))}
       </Grid>

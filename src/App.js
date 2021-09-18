@@ -1,4 +1,4 @@
-import { VStack } from "@chakra-ui/layout";
+import { Divider, VStack } from "@chakra-ui/layout";
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -6,23 +6,28 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Contact from "./components/Contact";
 
-{/* TODO: Add navigation, add blog*/}
 function App() {
   return (
-    <Router>
-      <VStack>
-        <Header />
-        <Hero />
-        <Switch>
-          <Route path="/"></Route>
-          <Route path="/blogs"></Route>
-        </Switch>
-        <Skills />
-        <Projects />
-        <Footer />
-      </VStack>
-    </Router>
+    <>
+      <Router>
+        <VStack maxW="6xl" marginLeft="auto" marginRight="auto" width="80%">
+          <Header />
+          <Hero />
+
+          <Switch>
+            <Route path="/"></Route>
+            <Route path="/blogs"></Route>
+          </Switch>
+          <Skills />
+          {<br />}
+
+          <Projects />
+          <Footer />
+        </VStack>
+      </Router>
+    </>
   );
 }
 

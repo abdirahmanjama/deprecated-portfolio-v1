@@ -16,14 +16,14 @@ const siteConfig = {
         key: '1',
         url: 'https://github.com/abdirahmanjama',
         label: 'Github Account',
-        type: 'gray',
+        type: 'github',
         icon: <FaGithub />
       },
       {
         key: '3',
         url: 'https://abdirahman-jama.medium.com/',
         label: 'Medium',
-        type: 'gray',
+        type: 'medium',
         icon: <FaMedium />
       },
       {
