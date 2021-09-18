@@ -24,8 +24,8 @@ function App() {
           </Switch>
           <Skills />
 
-          
-          {isNotMobile && <Projects/>}
+          <br/>
+          <Projects/>
           <Footer />
         </VStack>
       </Router>

@@ -64,7 +64,7 @@ function Hero() {
         text={ TASKS[index % TASKS.length] }
         springConfig={ presets.wobbly }
       /></Text>
-          <Link href="https://instagram.com/abdirahmanjama" target="_blank">
+          <Link href="https://instagram.com/abdirahmancodes" target="_blank">
            <Text fontSize="2xl"> @abdirahmancodes</Text>
           </Link>
         </chakra.div>
