@@ -14,7 +14,7 @@ import TextTransition, { presets } from "react-text-transition";
 
 
 function Hero() {
-  const bgColor = useColorModeValue("green.100", "green.100");
+  const bgColor = useColorModeValue("yellow.300", "yellow.300");
   const color = useColorModeValue("black", "black");
   const [index, setIndex] = React.useState(0);
 

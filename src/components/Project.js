@@ -108,6 +108,19 @@ function Project({ title, desc, tech, colorMode, image_url }) {
             >
               {title}
             </Text>}
+            {!isNotMobile &&  <Flex w="100%" h="100%" alignItems="center"      mb={!isNotMobile && "0"}
+>
+
+
+         
+            <Image
+              rounded="md"
+              src={image_url}
+              fallback={<Skeleton />}
+              mb={!isNotMobile && "0"}
+
+            />
+        </Flex> }
             <Text
               fontSize="sm"
               color={useColorModeValue("black")}
