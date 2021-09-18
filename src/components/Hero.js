@@ -7,7 +7,7 @@ import {
   Text,
   Stack,
 } from "@chakra-ui/layout";
-import { chakra, useColorModeValue } from "@chakra-ui/system";
+import { chakra, useColorMode, useColorModeValue } from "@chakra-ui/system";
 import React from "react";
 import './Hero.css'
 import TextTransition, { presets } from "react-text-transition";
@@ -18,6 +18,10 @@ function Hero() {
   const bgColor = useColorModeValue("yellow.300", "yellow.300");
   const color = useColorModeValue("black", "black");
   const [index, setIndex] = React.useState(0);
+  const {colorMode, toggleColorMode} = useColorMode();
+
+  const isDark = colorMode === 'dark';
+
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
   const TASKS = [
@@ -41,7 +45,7 @@ function Hero() {
       paddingTop={isNotMobile ? 10 : 0}
      
     >
-      <Container maxW="6xl" mb={10}>
+      <Container maxW="6xl" mb={10} className="container">
         <Center mt={isNotMobile ? 20 : 7} w="auto" mb={5}>
         <Heading
             as="h1"
@@ -53,7 +57,6 @@ function Hero() {
             
     
             Hello <span className="wave-emoji">👋</span><br/>
-            I'm Abdirahman <br/>
             I build user friendly {" "}
             <Text bg={bgColor} color={color} w="auto" display="inline">
               applications
@@ -68,6 +71,28 @@ function Hero() {
           <Link href="https://instagram.com/abdirahmancodes" target="_blank">
            <Text fontSize="2xl"> @abdirahmancodes</Text>
           </Link>
+
+{  isDark ? 
+
+          <style>
+        {`
+         
+      ::selection {
+            background: #687a96; /* WebKit/Blink Browsers */
+          }
+        `}
+
+      </style> : 
+        <style>
+        {`
+         
+      ::selection {
+            background: #b2d3b2; /* WebKit/Blink Browsers */
+          }
+        `}
+
+      </style>
+}
         </chakra.div>
       </Container>
     </Stack>
