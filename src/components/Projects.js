@@ -146,7 +146,6 @@ function Project({ title, desc, tech, colorMode, image_url }) {
 }
 
 const Projects = () => {
-  const { colorMode } = useColorMode();
   const projects = [
     {
       title: "LinkedIn Clone",
@@ -189,7 +188,7 @@ const Projects = () => {
 
       <Grid
         templateColumns={isNotMobile ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
-        gap={2}
+        gap={isNotMobile ? 2 : 0}
       >
         {projects.map((project, index) => (
           <Project

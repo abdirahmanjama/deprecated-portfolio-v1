@@ -6,7 +6,6 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -21,9 +20,9 @@ function App() {
             <Route path="/blogs"></Route>
           </Switch>
           <Skills />
-          {<br />}
 
           <Projects />
+        
           <Footer />
         </VStack>
       </Router>

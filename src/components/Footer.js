@@ -18,7 +18,12 @@ const iconProps = {
 const Footer = (props) => {
   const year = new Date().getFullYear() || "2021";
   return (
-    <Flex as="footer">
+    <Flex as="footer"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+    >
+
       <Stack
         as="footer"
         isInline
@@ -28,9 +33,9 @@ const Footer = (props) => {
         alignItems="center"
         {...props}
       >
-        <Text marginRight="24px">Abdirahman Jama © {year}</Text>
         {siteConfig.author.accounts.map((sc) => (
           <IconButton
+          flexDirection="row"
             as={Link}
             isExternal
             href={sc.url}
@@ -42,6 +47,8 @@ const Footer = (props) => {
           />
         ))}
       </Stack>
+      <Text>© {year} • Abdirahman Jama</Text>
+
     </Flex>
   );
 };
