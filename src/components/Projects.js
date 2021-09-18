@@ -92,7 +92,6 @@ function Project({ title, desc, tech, colorMode, image_url }) {
               rounded="md"
               src={image_url}
               fallback={<Skeleton />}
-              objectFit="cover"
               mb={!isNotMobile && "0"}
 
             />
@@ -177,8 +176,8 @@ const Projects = () => {
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
   return (
-    <Box
-    //   backgroundColor={`mode.${colorMode}.background`}
+    <Stack
+    as="main"
     margin ="0"
     padding="0"
     >
@@ -188,22 +187,48 @@ const Projects = () => {
 
       <Grid
         templateColumns={isNotMobile ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
-        gap={isNotMobile ? 2 : 0}
-        margin={!isNotMobile && "0"}
-        padding={!isNotMobile && "0"}
+        gap={2} w='100%' mb={10}
       >
-        {projects.map((project) => (
+        {/* {projects.map((project) => (
           <Project
      
             title={project.title}
             desc={project.desc}
             tech={project.tech}
             image_url={project.image_url}
-            borderColor="red"
           />
-        ))}
+        ))} */}
+
+        <Project
+            
+            title={projects[0].title}
+            desc={projects[0].desc}
+            tech={projects[0].tech}
+            image_url={projects[0].image_url}
+          />
+           <Project
+            
+            title={projects[1].title}
+            desc={projects[1].desc}
+            tech={projects[1].tech}
+            image_url={projects[1].image_url}
+          />
+           <Project
+            
+            title={projects[2].title}
+            desc={projects[2].desc}
+            tech={projects[2].tech}
+            image_url={projects[2].image_url}
+          />
+           <Project
+            
+            title={projects[3].title}
+            desc={projects[3].desc}
+            tech={projects[3].tech}
+            image_url={projects[3].image_url}
+          />
       </Grid>
-    </Box>
+    </Stack>
   );
 };
 
