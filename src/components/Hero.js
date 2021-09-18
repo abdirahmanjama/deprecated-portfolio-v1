@@ -38,6 +38,7 @@ function Hero() {
       as="main"
       color={useColorModeValue("white, black")}
       ml="0"
+      paddingTop="10"
      
     >
       <Container maxW="6xl" mb={10}>
