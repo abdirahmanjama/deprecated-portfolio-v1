@@ -80,6 +80,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
               fontWeight="300px"
               fontWeight="bold"
               fontSize="md"
+              mb="0"
             >
               {title}
             </Text>}
@@ -91,6 +92,8 @@ function Project({ title, desc, tech, colorMode, image_url }) {
               src={image_url ? image_url : "https://bit.ly/2k1H1t6"}
               fallback={<Skeleton />}
               objectFit="cover"
+              mb={!isNotMobile && "0"}
+
             />
           </AspectRatio>
         </Flex>
@@ -112,6 +115,8 @@ function Project({ title, desc, tech, colorMode, image_url }) {
               lineHeight="short"
               color={useColorModeValue("black")}
               borderColor={useColorModeValue("gray.700", "gray.700")}
+              mb={!isNotMobile && "0"}
+
             >
               {desc}
             </Text>
