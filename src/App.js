@@ -24,6 +24,7 @@ function App() {
           </Switch>
           <Skills />
 
+          
           <br/>
           <Projects/>
           <Footer />

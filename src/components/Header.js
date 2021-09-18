@@ -8,6 +8,7 @@ import {
   Switch,
   Text,
   useDisclosure,
+  useMediaQuery,
 
 
 } from '@chakra-ui/react';
@@ -22,6 +23,8 @@ export default function Header() {
   const {colorMode, toggleColorMode} = useColorMode();
   const isDark = colorMode === 'dark';
   const [toggle, setToggle] = useState('none')
+  const [isNotMobile] = useMediaQuery("(min-width:760px)");
+
   return (
     <>
       {/* <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} width="100%" position="sticky">
@@ -41,13 +44,17 @@ export default function Header() {
           top="1rem"
           right="1rem"
           alignItems="center"
-          justify="flex-end"
+          justify={isNotMobile ? "flex-end" : "space-between"}
           pr="10"
         
         >
+          {!isNotMobile && <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>}
+
           <Flex 
-                display={['none', 'none', 'flex', 'flex']}    
+                display={['none', 'none', 'flex', 'flex']}   
+                 
               >
+                
             <NavLink to="/">
               <Button
               as="a"
@@ -95,7 +102,8 @@ export default function Header() {
               setToggle('flex')
             }}
           />
-          <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>
+                    {isNotMobile && <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>}
+
 
 
         </Flex>
@@ -126,8 +134,7 @@ export default function Header() {
         <Flex 
         direction="column"
         alignItems="center"
-                display={['flex', 'flex', 'flex', 'flex']}    
-
+        display={['flex', 'flex', 'flex', 'flex']}    
               >
                 
                 <IconButton
