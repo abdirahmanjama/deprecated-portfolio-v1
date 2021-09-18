@@ -4,6 +4,7 @@ import {
   Box,
   Flex,
   IconButton,
+  Text,
   useDisclosure,
 
 
@@ -19,9 +20,11 @@ export default function Header() {
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} width="100%" position="sticky">
-        <Flex h={16} alignItems={'center'} justify='flex-end'>
+
+        <Flex h={16} alignItems={'center'} justify='space-between'>
           
-         
+        <Text m={0} p={0} textAlign="center" fontSize="2xl" >Abdirahman Jama</Text>
+
       <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>
         </Flex>
 
