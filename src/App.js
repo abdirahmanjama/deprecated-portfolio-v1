@@ -6,8 +6,11 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useMediaQuery } from "@chakra-ui/media-query";
 
 function App() {
+  const [isNotMobile] = useMediaQuery("(min-width:760px)");
+
   return (
     <>
       <Router>
@@ -21,8 +24,8 @@ function App() {
           </Switch>
           <Skills />
 
-          <Projects />
-        
+          
+          {isNotMobile && <Projects/>}
           <Footer />
         </VStack>
       </Router>
