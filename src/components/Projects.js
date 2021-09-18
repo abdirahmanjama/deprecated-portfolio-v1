@@ -42,7 +42,7 @@ function setTagColour(tag){
         return 'cyan.700'
       case 'java':
         return 'red.700'
-      case 'spring boot': 
+      case 'springboot': 
         return 'green.700'
       case 'aws':
         return 'yellow.500'
@@ -147,8 +147,8 @@ const Projects = () => {
     },
     {
       title: "Image Uploader",
-      desc: `Developed web application that enables users to upload images directly to S3 via the web`,
-      tech: "react,aws,java,spring boot",
+      desc: `Developed a web application that enables users to upload images directly to S3 which in turn gets pushed to an endpoint.`,
+      tech: "react,aws,java,springboot",
       image_url: imageuploader,
       color: "green",
     },
