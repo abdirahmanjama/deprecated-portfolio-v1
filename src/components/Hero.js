@@ -53,9 +53,9 @@ function Hero() {
     
             Hello <span className="wave-emoji">👋</span><br/>
             I'm Abdirahman <br/>
-            I create beautiful user {" "}
+            I build user friendly {" "}
             <Text bg={bgColor} color={color} w="auto" display="inline">
-              experiences
+              applications
             </Text>
           </Heading>
         </Center>
@@ -65,7 +65,7 @@ function Hero() {
         springConfig={ presets.wobbly }
       /></Text>
           <Link href="https://instagram.com/abdirahmanjama" target="_blank">
-           <Text size="2xl"> @abdirahmancodes</Text>
+           <Text fontSize="2xl"> @abdirahmancodes</Text>
           </Link>
         </chakra.div>
       </Container>

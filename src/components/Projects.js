@@ -181,6 +181,8 @@ const Projects = () => {
   return (
     <Box
     //   backgroundColor={`mode.${colorMode}.background`}
+    margin ="0"
+    padding="0"
     >
       <Text fontSize={"3xl"} mb="10px" fontWeight="extrabold" mb="5">
         Projects
@@ -189,10 +191,12 @@ const Projects = () => {
       <Grid
         templateColumns={isNotMobile ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
         gap={isNotMobile ? 2 : 0}
+        margin={!isNotMobile && "0"}
+        padding={!isNotMobile && "0"}
       >
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <Project
-            key={index}
+     
             title={project.title}
             desc={project.desc}
             tech={project.tech}
