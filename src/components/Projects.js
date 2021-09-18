@@ -57,7 +57,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
   return (
-    <Stack marginBottom={5}>
+    <Stack marginBottom={isNotMobile && 5}>
       <Heading
         as="h4"
         size="md"
@@ -84,7 +84,9 @@ function Project({ title, desc, tech, colorMode, image_url }) {
             >
               {title}
             </Text>}
-        <Flex w="100%" h="100%" alignItems="center">
+        <Flex w="100%" h="100%" alignItems="center"      mb={!isNotMobile && "0"}
+>
+
          
           <AspectRatio ratio={1.85 / 1} w="100%" borderBottomWidth="1px">
             <Image
