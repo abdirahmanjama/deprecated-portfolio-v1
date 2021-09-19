@@ -63,13 +63,17 @@ function Hero() {
             </Text>
           </Heading>
         </Center>
+
+        <br/>
         <chakra.div>
-          <Text fontSize="2xl"> <TextTransition
+          <Text fontSize="1xl"> <TextTransition
         text={ TASKS[index % TASKS.length] }
         springConfig={ presets.wobbly }
-      /></Text>
+      />
+      </Text>
+      
           <Link href="https://instagram.com/abdirahmancodes" target="_blank">
-           <Text fontSize="2xl"> @abdirahmancodes</Text>
+           <Text fontSize="1xl"> @abdirahmancodes</Text>
           </Link>
 
 {  isDark ? 

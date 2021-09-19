@@ -47,8 +47,9 @@ export default function Header() {
         >
           <Flex 
                 display={['none', 'none', 'flex', 'flex']}   
-                 
+                 alignItems="center"
               >
+            <Text>Abdirahman Jama</Text>
             <NavLink to="/">
               <Button
               as="a"
@@ -84,6 +85,7 @@ export default function Header() {
                 Blogs
               </Button>
             </NavLink>
+            
           </Flex>
 
           <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>

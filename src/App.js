@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useMediaQuery } from "@chakra-ui/media-query";
+import Contact from "./components/Contact";
 
 function App() {
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
@@ -27,6 +28,8 @@ function App() {
           
           <br/>
           <Projects/>
+         <br/>
+          <Contact/>
           <Footer />
         </VStack>
       </Router>
