@@ -49,7 +49,6 @@ export default function Header() {
                 display={['none', 'none', 'flex', 'flex']}   
                  alignItems="center"
               >
-            <Text>Abdirahman Jama</Text>
             <NavLink to="/">
               <Button
               as="a"
