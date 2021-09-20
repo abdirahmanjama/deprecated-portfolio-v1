@@ -7,6 +7,7 @@ function Blogs() {
          <Text fontSize={"3xl"} mb="10px" fontWeight="extrabold">
             Blogs
           </Text>
+         
        </>
     )
 }

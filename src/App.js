@@ -26,8 +26,7 @@ function App() {
             <Route exact path="/"><Home/></Route>
             <Route path="/about"><About/></Route>
             <Route path="/blogs"><Blogs/></Route>
-            <Route path="/404"><Error/></Route>
-            <Redirect to="/404" />
+            <Route component={Error}/>
           </Switch>
           <Footer />
         </VStack>
