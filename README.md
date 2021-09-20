@@ -7,9 +7,6 @@
 </p>
 
   <p align="center">
-    <br />
-    <br />
-
     <a href="https://github.com/abdirahmanjama/portfolio-ui/issues">Report Bug</a>
     ·
     <a href="https://github.com/abdirahmanjama/portfolio/issues">Request Feature</a>
