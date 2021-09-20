@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  The fourth iteration of <a href="abdirahman.io" target="_blank">abdirahman.io</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted on <a href="https://www.aws.amazon.com/" target="_blank">Amazon Web Services</a>
+  The first iteration of <a href="abdirahman.io" target="_blank">abdirahman.io</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted on <a href="https://www.aws.amazon.com/" target="_blank">Amazon Web Services</a>
 </p>
 
   <p align="center">
