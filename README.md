@@ -7,13 +7,11 @@
 </p>
 
 
-## 🚨 Forking this repo (please read!)
+## 🚨 Forking this repo
 
-Many people have contacted me on <a href="https://instagram.com/abdirahmancodes" target="_blank">Instagram</a> asking me if they can use this code for their own website, and the answer to that question is **yes** only if you reach out.
+Many people have contacted me on <a href="https://instagram.com/abdirahmancodes" target="_blank">Instagram</a> asking me if they can use this code for their own website, and the answer to that question is **no**.
 
-I value keeping my site open source.I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own. 
-
-Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [React docs](https://reactjs.org/) and [Chakra docs](https://chakra-ui.com/)
+Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [React docs](https://reactjs.org/) and [Chakra docs](https://chakra-ui.com/).
 
 # abdirahman.io
 
