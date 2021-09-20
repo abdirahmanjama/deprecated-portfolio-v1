@@ -25,7 +25,7 @@ Please also note that I did not build this site with the intention of it being a
 
 ## Purpose
 
-This project was created so I could experiment with different technologies in an environment outside production. If there's a particular technology I am interested in I will try it on this project. I am a firm believer of learning by doing - hence why I wanted to build a website from the ground up to see what level I am currently at with regards to front end development.
+This project was created so I could experiment with different technologies in an environment outside production. If there's a particular technology I am interested in I will try it out on this project. I am a firm believer of learning by doing - hence why I wanted to build a website from the ground up to see what level I am currently at with regards to front end development.
 
 ## Future work
 
