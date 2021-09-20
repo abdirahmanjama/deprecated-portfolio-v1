@@ -96,7 +96,7 @@ function Contact() {
           />
         </FormControl>
         <br />
-        <FormControl id="email" isRequired>
+        <FormControl id="email" isRequired >
           <FormLabel>Email address</FormLabel>
           <Input
             id="email"
