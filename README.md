@@ -34,7 +34,7 @@ This project was created so I could experiment with different technologies in an
 - Add an About Me section
 - Implement the Blog section
 - Experiment with Chakra UI's colour theme by extending it and fully customising it 
-- Auto-generated CI/CD pipelines?
+- Finish off my CI/CD pipelines
 - Refactor code 
 - Fix styling bugs
 
