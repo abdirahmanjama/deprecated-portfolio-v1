@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  The fourth iteration of <a href="abdirahman.io" target="_blank">abdirahman.io</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted with <a href="https://www.aws.amazon.com/" target="_blank">Amazon Web Services</a>
+  The fourth iteration of <a href="abdirahman.io" target="_blank">abdirahman.io</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted on <a href="https://www.aws.amazon.com/" target="_blank">Amazon Web Services</a>
 </p>
 
   <p align="center">
@@ -14,7 +14,7 @@
 </p>
 
 
-## Forking this repo
+## Important
 
 Many people have contacted me on <a href="https://instagram.com/abdirahmancodes" target="_blank">Instagram</a> asking me if they can use this code for their own website, and the answer to that question is **no**.
 
@@ -23,9 +23,9 @@ Please also note that I did not build this site with the intention of it being a
 
 <!-- ABOUT THE PROJECT -->
 
-## Info
+## Purpose
 
-This project was created so I could experiment with different technologies in an environment outside production. If there's a particular technology I am interested in I will try it on this project. 
+This project was created so I could experiment with different technologies in an environment outside production. If there's a particular technology I am interested in I will try it on this project. I am a firm believer of learning by doing - hence why I wanted to build a website from the ground up to see what level I am currently at with regards to front end development.
 
 ## Future work
 
