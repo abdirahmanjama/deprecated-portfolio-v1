@@ -21,7 +21,6 @@ function App() {
       <Router>
         <VStack maxW="6xl" marginLeft="auto" marginRight="auto" width="80%">
         <Header />
-
           <Switch>
             <Route exact path="/"><Home/></Route>
             <Route path="/about"><About/></Route>
