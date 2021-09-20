@@ -5,9 +5,13 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import Contact from "./components/Contact";
+import Blogs from "./components/Blogs";
+import Home from "./components/Home";
+import About from "./components/About";
+import Error from "./components/Error";
 
 function App() {
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
@@ -16,20 +20,15 @@ function App() {
     <>
       <Router>
         <VStack maxW="6xl" marginLeft="auto" marginRight="auto" width="80%">
-          <Header />
-          <Hero />
+        <Header />
 
           <Switch>
-            <Route path="/"></Route>
-            <Route path="/blogs"></Route>
+            <Route exact path="/"><Home/></Route>
+            <Route path="/about"><About/></Route>
+            <Route path="/blogs"><Blogs/></Route>
+            <Route path="/404"><Error/></Route>
+            <Redirect to="/404" />
           </Switch>
-          <Skills />
-
-          
-          <br/>
-          <Projects/>
-         <br/>
-          <Contact/>
           <Footer />
         </VStack>
       </Router>

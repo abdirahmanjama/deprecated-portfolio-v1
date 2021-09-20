@@ -1,20 +1,14 @@
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode'
-import React from 'react'
+import React, {useState} from 'react'
 import {
-  Box,
   Button,
   Flex,
   IconButton,
-  Switch,
-  Text,
-  useDisclosure,
-
-
 } from '@chakra-ui/react';
+
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { HamburgerIcon, CloseIcon} from '@chakra-ui/icons'
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function Header() {
@@ -22,19 +16,10 @@ export default function Header() {
   const {colorMode, toggleColorMode} = useColorMode();
   const isDark = colorMode === 'dark';
   const [toggle, setToggle] = useState('none')
+
   return (
     <>
-      {/* <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} width="100%" position="sticky">
-
-        <Flex h={16} alignItems={'center'} justify='space-between'>
-          
-        <Text m={0} p={0} textAlign="center" fontSize="2xl" >Abdirahman Jama</Text>
-
-      <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>
-        </Flex>
-
-      </Box> */}
-
+    
       <Flex>
         <Flex
         bg={useColorModeValue('gray.100', 'gray.900')} width="100vw"
@@ -49,7 +34,7 @@ export default function Header() {
                 display={['none', 'none', 'flex', 'flex']}   
                  alignItems="center"
               >
-            <NavLink to="/">
+            <Link to="/">
               <Button
               as="a"
               variant="ghost"
@@ -59,9 +44,9 @@ export default function Header() {
               >
                 Home
               </Button>
-            </NavLink>
+            </Link>
 
-            <NavLink to="/about">
+            <Link to="/about">
               <Button
               as="a"
               variant="ghost"
@@ -72,8 +57,8 @@ export default function Header() {
                 About
 
               </Button>
-            </NavLink>    
-            <NavLink to="/blogs">
+            </Link>    
+            <Link to="/blogs">
               <Button
               as="a"
               variant="ghost"
@@ -83,10 +68,10 @@ export default function Header() {
               >
                 Blogs
               </Button>
-            </NavLink>
+            </Link>
             
           </Flex>
-
+          
           <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>
 
           <IconButton 
@@ -139,7 +124,7 @@ export default function Header() {
           }}
           ><CloseIcon/></IconButton>
         </Flex>
-            <NavLink to="/">
+            <Link to="/">
               <Button
               as="a"
               variant="ghost"
@@ -149,9 +134,9 @@ export default function Header() {
               >
                 Home
               </Button>
-            </NavLink>
+            </Link>
 
-            <NavLink to="/about">
+            <Link to="/about">
               <Button
               as="a"
               variant="ghost"
@@ -162,8 +147,8 @@ export default function Header() {
                 About
 
               </Button>
-            </NavLink>    
-            <NavLink to="/blogs">
+            </Link>    
+            <Link to="/blogs">
               <Button
               as="a"
               variant="ghost"
@@ -173,7 +158,7 @@ export default function Header() {
               >
                 Blogs
               </Button>
-            </NavLink>
+            </Link>
           </Flex>
 
         </Flex>

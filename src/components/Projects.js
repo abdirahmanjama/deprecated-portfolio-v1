@@ -43,13 +43,13 @@ function Projects() {
     return (
         <Stack
         >
-          <Text fontSize={"3xl"}  fontWeight="extrabold" mb="5">
+          <Text fontSize={"3xl"} mb="10px" fontWeight="extrabold">
             Projects
           </Text>
     
           <Grid
             templateColumns={isNotMobile ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
-            gap={2} w='100%' 
+            gap={2} w='100%' mb={10}
           >
             {/* {projects.map((project) => (
               <Project
