@@ -7,14 +7,12 @@
 </p>
 
   <p align="center">
-    A site which demonstrates my software development skills and showcases my projects
     <br />
     <br />
-    <a href="https://top100cryptocurrencies.netlify.app/" target='#'>View Demo</a>
+
+    <a href="https://github.com/abdirahmanjama/portfolio-ui/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Samatarx/Personal-Portfolio/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Samatarx/Personal-Portfolio/issues">Request Feature</a>
+    <a href="https://github.com/abdirahmanjama/portfolio/issues">Request Feature</a>
   </p>
 </p>
 
