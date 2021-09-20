@@ -6,7 +6,7 @@
   The first iteration of <a href="abdirahman.io" target="_blank">abdirahman.io</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted on <a href="https://www.aws.amazon.com/" target="_blank">Amazon Web Services</a>
 </p>
 
-<img>https://user-images.githubusercontent.com/45077645/134073932-a575bc21-d75a-4546-9719-d1af86f80630.png</img>
+![image](https://user-images.githubusercontent.com/45077645/134073932-a575bc21-d75a-4546-9719-d1af86f80630.png)
 
   <p align="center">
     <a href="https://github.com/abdirahmanjama/portfolio-ui/issues">Report Bug</a>
