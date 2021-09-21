@@ -18,8 +18,6 @@
 
 ## Important
 
-Many people have contacted me on <a href="https://instagram.com/abdirahmancodes" target="_blank">Instagram</a> asking me if they can use this code for their own website, and the answer to that question is **no**.
-
 Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [React docs](https://reactjs.org/) and [Chakra docs](https://chakra-ui.com/).
 
 
