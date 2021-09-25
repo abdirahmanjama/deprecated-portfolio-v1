@@ -37,7 +37,7 @@ function Blogs() {
 
           <Blog
             title="How to build a website in 2021"
-            tags="react, vanillajs, html, css, css, html, javascript"
+            tags="react, vanillajs, html, ux, css, html, javascript"
             description="After reading this article, you will know what to do when you're tasked with building a website from scratch. From design to implementation - we cover everything in this article and we've left no stones unturned."
             article_url="https://towardsaws.com/set-up-a-chatops-notifications-service-within-your-aws-environment-in-5-minutes-using-eventbridge-4e22111d36ee"
           />
