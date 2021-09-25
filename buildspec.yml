@@ -1,19 +1,11 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - curl -sL https://deb.nodesource.com/setup_12.x | bash - 
-      - apt install -y nodejs
-      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-      - apt install --no-install-recommends npm
   pre_build:
     commands:
-      - echo Installing dependencies...
       - npm install
   build:
     commands:
-      - echo Building...
       - npm run build
 artifacts:
   files:
