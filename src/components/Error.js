@@ -1,4 +1,4 @@
-import { Flex, Grid, Text } from "@chakra-ui/layout";
+import { Grid, Text } from "@chakra-ui/layout";
 import React from "react";
 
 function Error() {

@@ -1,20 +1,17 @@
-import React from "react";
 import {
   Box,
-  Stack,
-  Heading,
   Flex,
-  Text,
-  Tag,
-  Image,
-  useColorMode,
   Grid,
+  Heading,
+  Image,
   Skeleton,
-  AspectRatio,
+  Stack,
+  Tag,
+  Text,
   useColorModeValue,
   useMediaQuery,
 } from "@chakra-ui/react";
-
+import React from "react";
 
 function setTagColour(tag) {
   switch (tag) {
@@ -61,7 +58,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         color={useColorModeValue("grey.100, grey.700")}
       ></Heading>
       <Grid
-        templateColumns= {isNotMobile ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
+        templateColumns={isNotMobile ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
         //gridTemplateColumns={['1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
         gap={2}
         p={5}
@@ -72,63 +69,60 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         position="relative"
         rounded="md"
       >
-         {!isNotMobile &&  <Text
-              as="span"
-              fontWeight="300px"
-              fontWeight="bold"
-              fontSize="md"
-              mb="0"
-            >
-              {title}
-            </Text>}
+        {!isNotMobile && (
+          <Text
+            as="span"
+            fontWeight="bold"
+            fontSize="md"
+            mb="0"
+          >
+            {title}
+          </Text>
+        )}
 
-            {isNotMobile &&  <Flex w="100%" h="100%" alignItems="center"      mb={!isNotMobile && "0"}
->
-
-
-         
+        {isNotMobile && (
+          <Flex w="100%" h="100%" alignItems="center" mb={!isNotMobile && "0"}>
             <Image
               rounded="md"
               src={image_url}
               fallback={<Skeleton />}
               mb={!isNotMobile && "0"}
-
             />
-        </Flex> }
-       
+          </Flex>
+        )}
+
         <Box w="100%">
-          
-          <Stack  pl={[0, 4, 4, 4]}>
-            { isNotMobile &&
-            <Text
-              as="span"
-              fontWeight="300px"
-              fontWeight="bold"
-              fontSize="md"
-            >
-              {title}
-            </Text>}
-            {!isNotMobile &&  <Flex w="100%" h="100%" alignItems="center"      mb={!isNotMobile && "0"}
->
-
-
-         
-            <Image
-              rounded="md"
-              src={image_url}
-              fallback={<Skeleton />}
-              mb={!isNotMobile && "0"}
-
-            />
-        </Flex> }
+          <Stack pl={[0, 4, 4, 4]}>
+            {isNotMobile && (
+              <Text
+                as="span"
+                fontWeight="300px"
+                fontSize="md"
+              >
+                {title}
+              </Text>
+            )}
+            {!isNotMobile && (
+              <Flex
+                w="100%"
+                h="100%"
+                alignItems="center"
+                mb={!isNotMobile && "0"}
+              >
+                <Image
+                  rounded="md"
+                  src={image_url}
+                  fallback={<Skeleton />}
+                  mb={!isNotMobile && "0"}
+                />
+              </Flex>
+            )}
             <Text
               fontSize="sm"
               color={useColorModeValue("black")}
               lineHeight="short"
-              color={useColorModeValue("black")}
               borderColor={useColorModeValue("gray.700", "gray.700")}
               mb={!isNotMobile && "0"}
-
             >
               {desc}
             </Text>
@@ -142,7 +136,6 @@ function Project({ title, desc, tech, colorMode, image_url }) {
                   fontWeight="bold"
                   color={setTagColour(tag.toLowerCase())}
                   bgColor={setBgColour(tag.toLowerCase())}
-                  
                 >
                   {tag}
                 </Tag>

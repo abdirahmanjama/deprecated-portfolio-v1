@@ -1,16 +1,13 @@
 import { Button } from "@chakra-ui/button";
-import { useColorMode, useColorModeValue } from "@chakra-ui/color-mode";
 import { FormControl, FormLabel } from "@chakra-ui/form-control";
 import { Input } from "@chakra-ui/input";
-import { Box, Flex, Stack, Text } from "@chakra-ui/layout";
+import { Flex, Text } from "@chakra-ui/layout";
 import { Textarea } from "@chakra-ui/textarea";
-import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
 import { useToast } from "@chakra-ui/toast";
+import emailjs from "emailjs-com";
+import React, { useRef, useState } from "react";
 
 function Contact() {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const isDark = colorMode === "dark";
   const toast = useToast();
   const form = useRef();
   const [subject, setSubject] = useState("");
