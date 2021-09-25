@@ -1,17 +1,16 @@
-import { Image } from "@chakra-ui/image";
 import {
   Center,
   Container,
   Heading,
   Link,
-  Text,
-  Stack,
+
+  Stack, Text
 } from "@chakra-ui/layout";
+import { useMediaQuery } from "@chakra-ui/media-query";
 import { chakra, useColorMode, useColorModeValue } from "@chakra-ui/system";
 import React from "react";
-import './Hero.css'
 import TextTransition, { presets } from "react-text-transition";
-import { useMediaQuery } from "@chakra-ui/media-query";
+import './Hero.css';
 
 
 function Hero() {

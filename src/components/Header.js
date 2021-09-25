@@ -47,16 +47,7 @@ export default function Header() {
             </Link>
 
             <Link to="/about">
-              <Button
-              as="a"
-              variant="ghost"
-              aria-label="About"
-              my={5}
-              w="100%"
-              >
-                About
-
-              </Button>
+            
             </Link>    
             <Link to="/blogs">
               <Button
@@ -131,23 +122,15 @@ export default function Header() {
               aria-label="Home"
               my={5}
               w="100%"
+              onClick={() => {
+                setToggle('none')
+              }}
               >
                 Home
               </Button>
             </Link>
 
-            <Link to="/about">
-              <Button
-              as="a"
-              variant="ghost"
-              aria-label="About"
-              my={5}
-              w="100%"
-              >
-                About
-
-              </Button>
-            </Link>    
+            
             <Link to="/blogs">
               <Button
               as="a"
@@ -155,6 +138,9 @@ export default function Header() {
               aria-label="Blogs"
               my={5}
               w="100%"
+              onClick={() => {
+                setToggle('none')
+              }}
               >
                 Blogs
               </Button>
