@@ -65,7 +65,7 @@ export default function Header() {
           </Flex>
     
           
-          <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true" background="none" onClick={toggleColorMode}></IconButton>
+          <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true" outline="none !important" border="none !important" boxShadow="none !important" background="none" onClick={toggleColorMode}></IconButton>
 
           {/* <Switch onClick={colorMode==="light"}/> */}
 
