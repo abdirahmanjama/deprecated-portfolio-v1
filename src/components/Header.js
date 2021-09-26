@@ -9,7 +9,8 @@ import {
 
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { HamburgerIcon, CloseIcon} from '@chakra-ui/icons'
-import { Link } from 'react-router-dom';
+import {HashLink} from 'react-router-hash-link';
+import {Link} from 'react-router-dom'
 
 
 export default function Header() {
@@ -47,10 +48,23 @@ export default function Header() {
               </Button>
             </Link>
 
-            <Link to="/about">
+          
+        
             
-            </Link>    
-            <Link to="/blogs">
+            <HashLink smooth to="/#projects"
+          
+            >
+              <Button
+              as="a"
+              variant="ghost"
+              aria-label="Blogs"
+              my={5}
+              w="100%"
+              >
+                Projects
+              </Button>
+            </HashLink>
+            <HashLink smooth to="/#blogs">
               <Button
               as="a"
               variant="ghost"
@@ -60,7 +74,19 @@ export default function Header() {
               >
                 Blogs
               </Button>
-            </Link>
+            </HashLink>
+
+            <HashLink smooth to="/#contact">
+              <Button
+              as="a"
+              variant="ghost"
+              aria-label="Blogs"
+              my={5}
+              w="100%"
+              >
+                Contact
+              </Button>
+            </HashLink>
             
           </Flex>
     
@@ -135,8 +161,21 @@ export default function Header() {
               </Button>
             </Link>
 
-            
-            <Link to="/blogs">
+            <HashLink to="/#projects">
+              <Button
+              as="a"
+              variant="ghost"
+              aria-label="Projects"
+              my={5}
+              w="100%"
+              onClick={() => {
+                setToggle('none')
+              }}
+              >
+                Projects
+              </Button>
+            </HashLink>
+            <HashLink to="/#blogs">
               <Button
               as="a"
               variant="ghost"
@@ -149,7 +188,22 @@ export default function Header() {
               >
                 Blogs
               </Button>
-            </Link>
+            </HashLink>
+
+            <HashLink to="/#contact">
+              <Button
+              as="a"
+              variant="ghost"
+              aria-label="Contact"
+              my={5}
+              w="100%"
+              onClick={() => {
+                setToggle('none')
+              }}
+              >
+                Contact
+              </Button>
+            </HashLink>
           </Flex>
 
         </Flex>

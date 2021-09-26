@@ -1,6 +1,7 @@
 import {
   Center,
   Container,
+  Flex,
   Heading,
   Link,
   Stack,
@@ -9,6 +10,7 @@ import {
 import { useMediaQuery } from "@chakra-ui/media-query";
 import { chakra, useColorMode, useColorModeValue } from "@chakra-ui/system";
 import React from "react";
+import Particles from "react-particles-js";
 import TextTransition, { presets } from "react-text-transition";
 import "./Hero.css";
 
@@ -31,19 +33,42 @@ function Hero() {
     return () => clearTimeout(intervalId);
   }, []);
   return (
+
+    
     <Stack
       as="main"
       color={useColorModeValue("white, black")}
       ml="0"
       paddingTop={isNotMobile ? 10 : 0}
     >
+     
       <Container maxW="6xl" mb={10} className="container">
+    
+        <Flex
+        position="absolute"
+        >
+
+          {isDark &&
+          <Particles
+           params={{
+            particles: {
+              line_linked: {
+                shadow: {
+                  enable: true,
+                  color: " #000000",
+                }
+              }
+            }
+          }}
+          />}
+        </Flex>
         <Center mt={isNotMobile ? 20 : 7} w="auto" mb={5}>
           <Heading
             fontSize={["2xl", "3xl", "4xl", "5xl"]}
             letterSpacing={2}
             lineHeight={1.2}
             fontWeight="normal"
+            
           >
             Hello <span className="wave-emoji">👋</span>
             <br />

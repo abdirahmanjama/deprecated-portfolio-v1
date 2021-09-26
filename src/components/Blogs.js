@@ -13,6 +13,7 @@ function Blogs() {
           textAlign="left"
           align="start"
           mt={10}
+          id="blogs"
         >
           Featured Blogs
         </Text>

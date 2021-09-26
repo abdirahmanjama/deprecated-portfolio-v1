@@ -1,4 +1,5 @@
 import React from 'react'
+import Blogs from './Blogs'
 import Contact from './Contact'
 import Hero from './Hero'
 import Projects from './Projects'
@@ -11,6 +12,7 @@ function Home() {
         <Skills />
           <br/>
           <Projects/>
+         <Blogs/>
          <br/>
          <Contact/>
 

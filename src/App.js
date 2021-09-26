@@ -16,7 +16,7 @@ function App() {
         <Header />
           <Switch>
             <Route exact path="/"><Home/></Route>
-            <Route path="/blogs"><Blogs/></Route>
+            <Route path="/blogs"></Route>
             <Route component={Error}/>
           </Switch>
           <Footer />
