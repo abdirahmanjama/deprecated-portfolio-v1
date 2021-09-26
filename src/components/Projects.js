@@ -41,7 +41,9 @@ function Projects() {
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
   return (
-    <Stack>
+    <Stack
+    id="projects"
+    >
       <Text fontSize={"3xl"} mb="10px" fontWeight="extrabold">
         Projects
       </Text>

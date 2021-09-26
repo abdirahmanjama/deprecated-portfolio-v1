@@ -62,6 +62,7 @@ function Contact() {
       w="100%"
       mb={10}
       flexDirection="column"
+      id="contact"
     >
       <Text fontSize="4xl" mb="10px" fontWeight="extrabold">
         Contact me
