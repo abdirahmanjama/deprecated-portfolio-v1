@@ -4,6 +4,7 @@ import {
   Button,
   Flex,
   IconButton,
+  Switch,
 } from '@chakra-ui/react';
 
 import { FaMoon, FaSun } from 'react-icons/fa';
@@ -62,8 +63,11 @@ export default function Header() {
             </Link>
             
           </Flex>
+    
           
-          <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true"  onClick={toggleColorMode}></IconButton>
+          <IconButton icon = { isDark ? <FaSun/> : <FaMoon/> } isRound="true" background="none" onClick={toggleColorMode}></IconButton>
+
+          {/* <Switch onClick={colorMode==="light"}/> */}
 
           <IconButton 
             aria-label="Open Menu"

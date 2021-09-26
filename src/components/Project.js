@@ -66,8 +66,9 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         borderWidth="1px"
         borderColor={`mode.${colorMode}.border`}
         backgroundColor={useColorModeValue("white")}
-        position="relative"
         rounded="md"
+        height={isNotMobile ? "230px" : ""}
+        position={isNotMobile ? "relative" : ""}
       >
         {!isNotMobile && (
           <Text
