@@ -37,7 +37,7 @@ function Blogs() {
 
           <Blog
             title="How to build a website in 2021"
-            tags="react, vanillajs, html, ux, css, html, javascript"
+            tags="react, ux, html, ux, css, html, ucd"
             description="After reading this article, you will know what to do when you're tasked with building a website from scratch. From design to implementation - we cover everything in this article and we've left no stones unturned."
             article_url="https://towardsaws.com/set-up-a-chatops-notifications-service-within-your-aws-environment-in-5-minutes-using-eventbridge-4e22111d36ee"
           />
@@ -45,7 +45,7 @@ function Blogs() {
 
           <Blog
             title="What is dependency injection?"
-            tags="java, springboot, backend, microservices, inversion of control"
+            tags="java, springboot, backend"
             description="This article goes through one of the fundamental concepts within Java Spring Boot: dependency injection. In software engineering, dependency injection is a technique whereby one object (or static method) supplies the dependencies of another object. A dependency is an object that can be used (a service)."
             article_url="https://abdirahman-jama.medium.com/what-is-dependency-injection-568af689117b"
           />
