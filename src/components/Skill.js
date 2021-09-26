@@ -14,7 +14,6 @@ function Skill({ name, icon, description }) {
         textAlign="left"
         align="start"
         spacing={4}
-        _hover={{ shadow: "md" }}
       >
         <Box p={2}>{icon}</Box>
         <VStack

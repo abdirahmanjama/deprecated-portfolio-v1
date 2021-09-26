@@ -13,7 +13,6 @@ function Blog({ title, description, tags, article_url }) {
   return (
     <Box
       p={5}
-      _hover={{ shadow: "md", textDecoration: "none" }}
       borderWidth="1px"
       borderRadius="8px"
     >
