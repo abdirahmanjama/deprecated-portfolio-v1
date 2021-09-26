@@ -28,17 +28,9 @@ function Blogs() {
           <br />
 
           <Blog
-            title="Deep dive: event-driven architectures"
+            title="Event-driven architectures"
             tags="eventbridge, lambda, python, aws, devops"
             description="This article will show you how to set up an event driven architecture within your AWS environment. The things taught in this guide can form as a basis for some very powerful applications."
-            article_url="https://towardsaws.com/set-up-a-chatops-notifications-service-within-your-aws-environment-in-5-minutes-using-eventbridge-4e22111d36ee"
-          />
-          <br />
-
-          <Blog
-            title="How to build a website in 2021"
-            tags="react, ux, html, ux, css, ucd"
-            description="After reading this article, you will know what to do when you're tasked with building a website from scratch. From design to implementation - we cover everything in this article and we've left no stones unturned."
             article_url="https://towardsaws.com/set-up-a-chatops-notifications-service-within-your-aws-environment-in-5-minutes-using-eventbridge-4e22111d36ee"
           />
           <br />
