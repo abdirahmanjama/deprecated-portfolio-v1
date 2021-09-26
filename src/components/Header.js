@@ -73,6 +73,7 @@ export default function Header() {
             aria-label="Open Menu"
             size="lg"
             mr={2}
+            background="none"
             icon={<HamburgerIcon/>}
             display={['flex', 'flex', 'none', 'none']}
             onClick={() => {
