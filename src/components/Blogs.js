@@ -20,7 +20,7 @@ function Blogs() {
 
         <Stack>
         <Blog
-            title="Set up a cloud-native CI/CD Pipeline in under 7 minutes using AWS CodePipeline, S3 and CodeBuild"
+            title="Deep dive into CI/CD using AWS"
             tags="react, chakraui, jest, aws, css, html, javascript"
             description="After reading this article, you will be able to set up a fully automated, cloud native CI/CD pipeline for your React, Vue or Angular projects."
             article_url="https://towardsaws.com/set-up-a-chatops-notifications-service-within-your-aws-environment-in-5-minutes-using-eventbridge-4e22111d36ee"
@@ -28,7 +28,7 @@ function Blogs() {
           <br />
 
           <Blog
-            title="Set up a ChatOps notifications service within your AWS environment in 5 minutes using AWS and Python"
+            title="Set up event-driven architectures in AWS"
             tags="eventbridge, lambda, python, aws, devops"
             description="This article will show you how to set up an event driven architecture within your AWS environment. The things taught in this guide can form as a basis for some very powerful applications."
             article_url="https://towardsaws.com/set-up-a-chatops-notifications-service-within-your-aws-environment-in-5-minutes-using-eventbridge-4e22111d36ee"

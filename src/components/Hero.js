@@ -48,7 +48,7 @@ function Hero() {
             Hello <span className="wave-emoji">👋</span>
             <br />
             <br/>
-            I'm <strong>Abdirahman Jama</strong>, a design-minded software engineer focused on building user beautiful interfaces &{" "}
+            I'm <strong>Abdirahman Jama</strong>, a design-minded software engineer focused on building beautiful user interfaces &{" "}
             <Text bg={bgColor} color={color} w="auto" display="inline">
             experiences
             </Text>
