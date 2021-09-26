@@ -62,7 +62,6 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         //gridTemplateColumns={['1fr', '1fr 1fr', '1fr 1fr', '1fr 1fr']}
         gap={2}
         p={5}
-        _hover={{ shadow: "md" }}
         borderWidth="1px"
         borderColor={`mode.${colorMode}.border`}
         backgroundColor={useColorModeValue("white")}
@@ -99,6 +98,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
                 as="span"
                 fontWeight="300px"
                 fontSize="md"
+                fontWeight="bold"
               >
                 {title}
               </Text>
