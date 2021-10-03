@@ -1,6 +1,6 @@
 import { useColorMode, useColorModeValue } from "@chakra-ui/color-mode";
 import React, { useState } from "react";
-import { Button, Flex, IconButton, Switch } from "@chakra-ui/react";
+import { Button, Flex, IconButton } from "@chakra-ui/react";
 
 import { FaMoon, FaSun } from "react-icons/fa";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";

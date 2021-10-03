@@ -27,8 +27,9 @@ const Footer = (props) => {
         alignItems="center"
         {...props}
       >
-        {siteConfig.author.accounts.map((sc) => (
+        {siteConfig.author.accounts.map((sc, i) => (
           <IconButton
+            key={i}
             flexDirection="row"
             as={Link}
             isExternal

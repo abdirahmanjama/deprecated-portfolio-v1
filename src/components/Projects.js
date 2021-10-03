@@ -52,8 +52,9 @@ function Projects() {
         w="100%"
         mb={10}
       >
-        {projects.map((project) => (
+        {projects.map((project, key) => (
           <Project
+            key={key}
             title={project.title}
             desc={project.desc}
             tech={project.tech}

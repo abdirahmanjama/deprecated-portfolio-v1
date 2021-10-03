@@ -12,6 +12,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
+import PropTypes from "prop-types";
 
 function setTagColour(tag) {
   switch (tag) {
@@ -27,6 +28,8 @@ function setTagColour(tag) {
       return "white.900";
     case "firebase":
       return "orange.100";
+    default:
+      return "gray.100";
   }
 }
 
@@ -44,6 +47,8 @@ function setBgColour(tag) {
       return "yellow.400";
     case "firebase":
       return "orange.500";
+    default:
+      return "gray.100";
   }
 }
 
@@ -89,12 +94,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         <Box w="100%">
           <Stack pl={[0, 4, 4, 4]}>
             {isNotMobile && (
-              <Text
-                as="span"
-                fontWeight="300px"
-                fontSize="md"
-                fontWeight="bold"
-              >
+              <Text as="span" fontWeight="300px" fontSize="md">
                 {title}
               </Text>
             )}
@@ -128,7 +128,6 @@ function Project({ title, desc, tech, colorMode, image_url }) {
                   size="sm"
                   padding="0 3px"
                   key={tag}
-                  color="#4299E1"
                   fontWeight="bold"
                   color={setTagColour(tag.toLowerCase())}
                   bgColor={setBgColour(tag.toLowerCase())}
@@ -144,4 +143,11 @@ function Project({ title, desc, tech, colorMode, image_url }) {
   );
 }
 
+Project.propTypes = {
+  title: PropTypes.string,
+  desc: PropTypes.string,
+  tech: PropTypes.string,
+  colorMode: PropTypes.element,
+  image_url: PropTypes.string,
+};
 export default Project;

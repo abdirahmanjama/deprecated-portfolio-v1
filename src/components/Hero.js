@@ -18,7 +18,7 @@ function Hero() {
   const bgColor = useColorModeValue("yellow.300", "yellow.300");
   const color = useColorModeValue("black", "black");
   const [index, setIndex] = React.useState(0);
-  const { colorMode, toggleColorMode } = useColorMode();
+  const colorMode = useColorMode();
 
   const isDark = colorMode === "dark";
 
@@ -51,12 +51,12 @@ function Hero() {
             fontWeight="normal"
           >
             Hello{" "}
-            <span className="wave-emoji" role="img" ara-label="wave-emoji">
+            <span role="img" className="wave-emoji" aria-label="wave-emoji">
               👋
             </span>
             <br />
             <br />
-            I'm <strong>Abdirahman Jama</strong>, a design-minded software
+            I&apos;m <strong>Abdirahman Jama</strong>, a design-minded software
             engineer focused on building beautiful user interfaces &{" "}
             <Text bg={bgColor} color={color} w="auto" display="inline">
               experiences

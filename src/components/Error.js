@@ -14,8 +14,8 @@ function Error() {
       >
         <Text fontSize="5xl">Page not found</Text>
         <Text fontSize="2xl" marginTop={30}>
-          Sorry, we couldn't find the page you were looking for. This is either
-          because:
+          Sorry, we couldn&apos;t find the page you were looking for. This is
+          either because:
         </Text>
 
         <ul>
