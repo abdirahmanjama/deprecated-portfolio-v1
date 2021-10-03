@@ -42,7 +42,7 @@ function Skills() {
             />
           }
           name="Back-end"
-          description="Java, Spring boot, Python, Flask, Elastic, Mongo, Microservices"
+          description="Java, Spring Boot, Python, Flask, Elastic, Mongo, Microservices"
         />
         <Skill
           icon={

@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.8.3",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^4.1.17",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
@@ -20,10 +21,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
     "react-text-transition": "^1.3.0",
-    "react-typing-animation": "^1.6.2",
-    "react-typist": "^2.0.5",
     "tsparticles": "^1.35.1",
-    "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -31,12 +29,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync build/ s3://abdirahmanjama1"
+    "deploy": "aws s3 sync build/ s3://abdirahmanjama1",
+    "lint": "eslint ./src/ --fix --max-warnings=0",
+    "lint-check": "eslint ./src/ --max-warnings=0"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "plugin:react/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:prettier/recommended",
+      "prettier"
     ]
   },
   "browserslist": {
@@ -50,5 +53,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0"
   }
 }
