@@ -40,8 +40,20 @@ function Hero() {
       paddingTop={isNotMobile ? 10 : 0}
     >
       <Container maxW="6xl" mb={10} className="container">
-        <Flex position="absolute">
-          <Particles />
+        <Flex position="absolute" width="inherit">
+          <Particles
+            params={{
+              particles: {
+                number: {
+                  value: 40,
+                  density: {
+                    enable: true,
+                    value_area: 600,
+                  },
+                },
+              },
+            }}
+          />
         </Flex>
         <Center mt={isNotMobile ? 20 : 7} w="auto" mb={5}>
           <Heading
