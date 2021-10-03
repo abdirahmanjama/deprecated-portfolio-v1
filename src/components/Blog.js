@@ -1,21 +1,16 @@
 import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Box, Flex, Heading, Spacer, Stack, Text } from "@chakra-ui/layout";
-import { useMediaQuery } from "@chakra-ui/media-query";
 import { Tag } from "@chakra-ui/tag";
 import React from "react";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 function Blog({ title, description, tags, article_url }) {
   const { colorMode } = useColorMode();
-  const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
   return (
-    <Box
-      p={5}
-      borderWidth="1px"
-      borderRadius="8px"
-    >
+    <Box p={5} borderWidth="1px" borderRadius="8px">
       <Flex>
         <Heading fontSize="xl" color={`mode.${colorMode}.text`}>
           {title}
@@ -54,5 +49,12 @@ function Blog({ title, description, tags, article_url }) {
     </Box>
   );
 }
+
+Blog.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  article_url: PropTypes.string,
+  tags: PropTypes.string,
+};
 
 export default Blog;

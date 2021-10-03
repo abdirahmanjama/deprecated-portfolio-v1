@@ -20,7 +20,7 @@ function Blogs() {
         <br />
 
         <Stack>
-        <Blog
+          <Blog
             title="Deep dive: CI/CD"
             tags="react, chakraui, jest, aws, css, html, javascript"
             description="After reading this article, you will be able to set up a fully automated, cloud native CI/CD pipeline for your React, Vue or Angular projects."

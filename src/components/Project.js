@@ -70,12 +70,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         position={isNotMobile ? "relative" : ""}
       >
         {!isNotMobile && (
-          <Text
-            as="span"
-            fontWeight="bold"
-            fontSize="md"
-            mb="0"
-          >
+          <Text as="span" fontWeight="bold" fontSize="md" mb="0">
             {title}
           </Text>
         )}

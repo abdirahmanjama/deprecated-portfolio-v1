@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Stack,
-  IconButton,
-  Link,
-  Flex,
-  Text,
-} from "@chakra-ui/react";
+import { Stack, IconButton, Link, Flex, Text } from "@chakra-ui/react";
 
 import siteConfig from "../config/site-config";
 
@@ -18,12 +12,12 @@ const iconProps = {
 const Footer = (props) => {
   const year = new Date().getFullYear() || "2021";
   return (
-    <Flex as="footer"
+    <Flex
+      as="footer"
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
     >
-
       <Stack
         as="footer"
         isInline
@@ -35,7 +29,7 @@ const Footer = (props) => {
       >
         {siteConfig.author.accounts.map((sc) => (
           <IconButton
-          flexDirection="row"
+            flexDirection="row"
             as={Link}
             isExternal
             href={sc.url}
@@ -48,7 +42,6 @@ const Footer = (props) => {
         ))}
       </Stack>
       <Text>© {year} • Abdirahman Jama</Text>
-
     </Flex>
   );
 };
