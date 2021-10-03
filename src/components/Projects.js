@@ -41,9 +41,7 @@ function Projects() {
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
   return (
-    <Stack
-    id="projects"
-    >
+    <Stack id="projects">
       <Text fontSize={"3xl"} mb="10px" fontWeight="extrabold">
         Projects
       </Text>
@@ -54,8 +52,9 @@ function Projects() {
         w="100%"
         mb={10}
       >
-        {projects.map((project) => (
+        {projects.map((project, key) => (
           <Project
+            key={key}
             title={project.title}
             desc={project.desc}
             tech={project.tech}

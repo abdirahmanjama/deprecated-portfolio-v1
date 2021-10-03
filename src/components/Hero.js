@@ -18,7 +18,7 @@ function Hero() {
   const bgColor = useColorModeValue("yellow.300", "yellow.300");
   const color = useColorModeValue("black", "black");
   const [index, setIndex] = React.useState(0);
-  const { colorMode, toggleColorMode } = useColorMode();
+  const colorMode = useColorMode();
 
   const isDark = colorMode === "dark";
 
@@ -33,34 +33,27 @@ function Hero() {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-
-    
     <Stack
       as="main"
       color={useColorModeValue("white, black")}
       ml="0"
       paddingTop={isNotMobile ? 10 : 0}
     >
-     
       <Container maxW="6xl" mb={10} className="container">
-    
-        <Flex
-        position="absolute"
-        >
-
-          {isDark &&
+        <Flex position="absolute" width="inherit">
           <Particles
-           params={{
-            particles: {
-              line_linked: {
-                shadow: {
-                  enable: true,
-                  color: " #000000",
-                }
-              }
-            }
-          }}
-          />}
+            params={{
+              particles: {
+                number: {
+                  value: 40,
+                  density: {
+                    enable: true,
+                    value_area: 600,
+                  },
+                },
+              },
+            }}
+          />
         </Flex>
         <Center mt={isNotMobile ? 20 : 7} w="auto" mb={5}>
           <Heading
@@ -68,14 +61,17 @@ function Hero() {
             letterSpacing={2}
             lineHeight={1.2}
             fontWeight="normal"
-            
           >
-            Hello <span className="wave-emoji">👋</span>
+            Hello{" "}
+            <span role="img" className="wave-emoji" aria-label="wave-emoji">
+              👋
+            </span>
             <br />
-            <br/>
-            I'm <strong>Abdirahman Jama</strong>, a design-minded software engineer focused on building beautiful user interfaces &{" "}
+            <br />
+            I&apos;m <strong>Abdirahman Jama</strong>, a design-minded software
+            engineer focused on building beautiful user interfaces &{" "}
             <Text bg={bgColor} color={color} w="auto" display="inline">
-            experiences
+              experiences
             </Text>
           </Heading>
         </Center>

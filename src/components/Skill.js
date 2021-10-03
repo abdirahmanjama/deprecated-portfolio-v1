@@ -1,6 +1,7 @@
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { Box, HStack, Text, VStack } from "@chakra-ui/layout";
 import React from "react";
+import PropTypes from "prop-types";
 
 function Skill({ name, icon, description }) {
   return (
@@ -36,5 +37,11 @@ function Skill({ name, icon, description }) {
     </Box>
   );
 }
+
+Skill.propTypes = {
+  name: PropTypes.string,
+  description: PropTypes.string,
+  icon: PropTypes.element,
+};
 
 export default Skill;

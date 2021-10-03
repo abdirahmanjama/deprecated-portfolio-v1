@@ -13,15 +13,18 @@ function Skills() {
       as="main"
       color={useColorModeValue("white, black")}
       mb="100"
-  
 
       //   backgroundColor={`mode.${colorMode}.background`}
-   
     >
       <Text fontSize={"3xl"} mb="5" fontWeight="extrabold">
         Skills
       </Text>
-      <Grid templateColumns={isNotMobile ? "repeat(3,1fr)" : "repeat(1, 1fr)"} gap={2} w='100%' mb={10}>
+      <Grid
+        templateColumns={isNotMobile ? "repeat(3,1fr)" : "repeat(1, 1fr)"}
+        gap={2}
+        w="100%"
+        mb={10}
+      >
         <Skill
           icon={<Icon color="cyan.300" p="4" as={FaReact} w="16" h="16" />}
           name="Front-end"
@@ -50,7 +53,6 @@ function Skills() {
               as={FaAws}
               w="16"
               h="16"
-              
             />
           }
           name="Infrastructure"
