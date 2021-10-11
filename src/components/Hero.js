@@ -24,7 +24,7 @@ function Hero() {
 
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
-  const TASKS = ["Software Engineer", "Content Creator", "Writer"];
+  const TASKS = ["Software Engineer", "Ex-Youtuber", "Student"];
   React.useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
@@ -85,7 +85,6 @@ function Hero() {
               springConfig={presets.wobbly}
             />
           </Text>
-
           <Link href="https://instagram.com/abdirahmancodes" target="_blank">
             <Text fontSize="lg"> @abdirahmancodes</Text>
           </Link>

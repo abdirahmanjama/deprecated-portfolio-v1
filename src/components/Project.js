@@ -48,7 +48,7 @@ function setBgColour(tag) {
     case "firebase":
       return "orange.500";
     default:
-      return "gray.100";
+      return "gray.600";
   }
 }
 
