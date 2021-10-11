@@ -1,6 +1,6 @@
 import { IconButton } from "@chakra-ui/button";
 import { useColorMode } from "@chakra-ui/color-mode";
-import { Box, Flex, Heading, Spacer, Stack, Text } from "@chakra-ui/layout";
+import { Box, Flex, Spacer, Stack, Text } from "@chakra-ui/layout";
 import { Tag } from "@chakra-ui/tag";
 import React from "react";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
@@ -12,9 +12,9 @@ function Blog({ title, description, tags, article_url }) {
   return (
     <Box p={5} borderWidth="1px" borderRadius="8px">
       <Flex>
-        <Heading fontSize="xl" color={`mode.${colorMode}.text`}>
+        <Text fontWeight="bold" fontSize="md">
           {title}
-        </Heading>
+        </Text>
         <Spacer />
 
         <IconButton
@@ -29,9 +29,7 @@ function Blog({ title, description, tags, article_url }) {
         />
       </Flex>
 
-      <Text mt={3} color={`mode.${colorMode}.subtext`}>
-        {description}
-      </Text>
+      <Text fontSize="sm">{description}</Text>
 
       <Stack spacing={2} mt={1} isInline alignItems="center">
         {tags.split(",").map((tag) => (

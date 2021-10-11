@@ -16,7 +16,7 @@ export default function Header() {
     <>
       <Flex>
         <Flex
-          bg={useColorModeValue("gray.100", "gray.900")}
+          bg={useColorModeValue("white")}
           width="100vw"
           top="1rem"
           right="1rem"

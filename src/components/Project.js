@@ -48,7 +48,7 @@ function setBgColour(tag) {
     case "firebase":
       return "orange.500";
     default:
-      return "gray.100";
+      return "gray.600";
   }
 }
 
@@ -94,7 +94,7 @@ function Project({ title, desc, tech, colorMode, image_url }) {
         <Box w="100%">
           <Stack pl={[0, 4, 4, 4]}>
             {isNotMobile && (
-              <Text as="span" fontWeight="300px" fontSize="md">
+              <Text as="span" fontWeight="bold" fontSize="md">
                 {title}
               </Text>
             )}
