@@ -25,7 +25,7 @@ function Contact() {
         "user_hI0deGE84gQse29pqrE4t"
       )
       .then(
-        (result) => {
+        () => {
           toast({
             title: `Success 🚀`,
             duration: 5000,
@@ -34,7 +34,7 @@ function Contact() {
           });
         },
 
-        (error) => {
+        () => {
           toast({
             title: `Error 🥴`,
             status: "error",
