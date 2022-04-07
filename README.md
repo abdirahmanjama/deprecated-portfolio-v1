@@ -29,12 +29,10 @@ This project was created so I could experiment with different technologies in an
 
 ## TODO:
 
-- Add an About Me section
-- Implement the Blog section
-- Experiment with Chakra UI's colour theme by extending it and fully customising it 
-- Finish off my CI/CD pipelines
-- Refactor code 
+- Add an About Me section ✅
+- Implement the Blog section ✅
+- Finish off my CI/CD pipelines ✅
+- Implement component container pattern
+- Refactor to typescript 😎
 - Fix styling bugs
-
-
 
