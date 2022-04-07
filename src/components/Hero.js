@@ -69,9 +69,9 @@ export default function Hero() {
             <br />
             <br />
             I&apos;m <strong>Abdirahman Jama</strong>, a design-minded software
-            engineer focused on building beautiful user interfaces &{" "}
+            engineer focused on building scalable applications with great user{" "}
             <Text bg={bgColor} color={color} w="auto" display="inline">
-              experiences
+              experiences.
             </Text>
           </Heading>
         </Center>
