@@ -2,8 +2,9 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
-const siteConfig = {
+const data = {
   copyright: `Copyright © ${new Date().getFullYear()} Abdirahman Jama. All Rights Reserved.`,
+  roles: ["developer", "human", "student"],
   author: {
     name: "Abdirahman Jama",
     accounts: [
@@ -40,4 +41,4 @@ const siteConfig = {
   },
 };
 
-export default siteConfig;
+export default data;

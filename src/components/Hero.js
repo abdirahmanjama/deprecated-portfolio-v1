@@ -8,13 +8,13 @@ import {
   Text,
 } from "@chakra-ui/layout";
 import { useMediaQuery } from "@chakra-ui/media-query";
-import { Button } from "@chakra-ui/react";
 import { chakra, useColorMode, useColorModeValue } from "@chakra-ui/system";
 import React, { useState } from "react";
 import Particles from "react-particles-js";
 import TextTransition, { presets } from "react-text-transition";
 import "./Hero.css";
-
+import data from "../config/data/data";
+import { Button } from "@chakra-ui/button";
 export default function Hero() {
   const bgColor = useColorModeValue("yellow.300", "yellow.300");
   const color = useColorModeValue("black", "black");
@@ -25,7 +25,6 @@ export default function Hero() {
 
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
-  const TASKS = ["Software Engineer", "Ex-Youtuber", "Student"];
   React.useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
@@ -41,7 +40,7 @@ export default function Hero() {
       paddingTop={isNotMobile ? 10 : 0}
     >
       <Container maxW="6xl" mb={10} className="container">
-        <Flex position="absolute" width="inherit" zIndex="-100">
+        <Flex position="absolute" zIndex="-100">
           <Particles
             params={{
               particles: {
@@ -82,7 +81,7 @@ export default function Hero() {
           <Text fontSize="lg">
             {" "}
             <TextTransition
-              text={TASKS[index % TASKS.length]}
+              text={data.roles[index % data.roles.length]}
               springConfig={presets.wobbly}
             />
           </Text>

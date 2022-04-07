@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack, IconButton, Link, Flex, Text, Box } from "@chakra-ui/react";
 
-import siteConfig from "../config/site-config";
+import data from "../config/data/data";
 
 const iconProps = {
   variant: "ghost",
@@ -27,7 +27,7 @@ export default function Footer(props) {
         alignItems="center"
         {...props}
       >
-        {siteConfig.author.accounts.map((sc, i) => (
+        {data.author.accounts.map((sc, i) => (
           <IconButton
             key={i}
             flexDirection="row"

@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <>
       <Flex
-        width="100%"
+        width="100vw"
         borderBottomColor={useColorModeValue("white", "blue.900")}
         boxShadow={"md"}
       >

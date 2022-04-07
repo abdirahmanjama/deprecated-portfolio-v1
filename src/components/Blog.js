@@ -12,7 +12,14 @@ export default function Blog({ title, description, tags, article_url }) {
   return (
     <Box p={5} borderWidth="1px" borderRadius="8px">
       <Flex>
-        <Text fontWeight="bold" fontSize="md">
+        <Text
+          fontWeight="bold"
+          fontSize="md"
+          cursor="pointer"
+          onClick={() => {
+            window.open(article_url, "_blank");
+          }}
+        >
           {title}
         </Text>
         <Spacer />
