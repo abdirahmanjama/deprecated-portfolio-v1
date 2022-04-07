@@ -3,7 +3,7 @@ import { Box, HStack, Text, VStack } from "@chakra-ui/layout";
 import React from "react";
 import PropTypes from "prop-types";
 
-function Skill({ name, icon, description }) {
+export default function Skill({ name, icon, description }) {
   return (
     <Box>
       <HStack
@@ -43,5 +43,3 @@ Skill.propTypes = {
   description: PropTypes.string,
   icon: PropTypes.element,
 };
-
-export default Skill;

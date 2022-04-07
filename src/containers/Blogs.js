@@ -3,27 +3,38 @@ import { Stack, Text } from "@chakra-ui/layout";
 import React from "react";
 import Blog from "../components/Blog";
 
-function Blogs() {
+export default function Blogs() {
   return (
     <>
-      <Stack as="main" color={useColorModeValue("white, black")} mb="100">
+      <Stack
+        as="main"
+        color={useColorModeValue("white, black")}
+        mb="100"
+        w="100%"
+      >
         <Text
           fontSize={"3xl"}
           fontWeight="extrabold"
           textAlign="left"
           align="start"
-          mt={10}
           id="blogs"
+          w="100%"
         >
           Featured Blogs
         </Text>
         <br />
-
         <Stack>
+          <Blog
+            title="Tips for landing your first developer role!"
+            tags="career, coding, compsci, algorithms, design, systems"
+            description="Do you know how to build a large scale distributed system that can handle 100 million requests?"
+            article_url="https://medium.com/p/d552075c1b74"
+          />
+          <br />
           <Blog
             title="Deep dive: CI/CD"
             tags="react, chakraui, jest, aws, css, html, javascript"
-            description="After reading this article, you will be able to set up a fully automated, cloud native CI/CD pipeline for your React, Vue or Angular projects."
+            description="Learn how to build a fully automated, cloud native CI/CD pipeline!"
             article_url="https://medium.com/@abdirahman-jama/set-up-a-cloud-native-ci-cd-pipeline-in-under-7-minutes-using-aws-codepipeline-s3-and-codebuild-1b6166daf694"
           />
           <br />
@@ -31,21 +42,12 @@ function Blogs() {
           <Blog
             title="Event-driven architectures"
             tags="eventbridge, lambda, python, aws, devops"
-            description="This article will show you how to set up an event driven architecture within your AWS environment. The things taught in this guide can form as a basis for some very powerful applications."
+            description="Learn how to build event driven architecture within your AWS environment!"
             article_url="https://towardsaws.com/set-up-a-chatops-notifications-service-within-your-aws-environment-in-5-minutes-using-eventbridge-4e22111d36ee"
           />
           <br />
-
-          <Blog
-            title="What is dependency injection?"
-            tags="java, springboot, backend"
-            description="This article goes through one of the fundamental concepts within Java Spring Boot: dependency injection. In software engineering, dependency injection is a technique whereby one object (or static method) supplies the dependencies of another object. A dependency is an object that can be used (a service)."
-            article_url="https://abdirahman-jama.medium.com/what-is-dependency-injection-568af689117b"
-          />
         </Stack>
       </Stack>
     </>
   );
 }
-
-export default Blogs;

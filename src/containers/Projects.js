@@ -7,7 +7,7 @@ import gmailclone from "../config/img/gmail.png";
 import imageuploader from "../config/img/javas3.png";
 import jamadesigns from "../config/img/jamadesigns.png";
 
-function Projects() {
+export default function Projects() {
   const projects = [
     {
       title: "LinkedIn Clone",
@@ -65,5 +65,3 @@ function Projects() {
     </Stack>
   );
 }
-
-export default Projects;

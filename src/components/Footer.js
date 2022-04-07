@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, IconButton, Link, Flex, Text } from "@chakra-ui/react";
+import { Stack, IconButton, Link, Flex, Text, Box } from "@chakra-ui/react";
 
 import siteConfig from "../config/site-config";
 
@@ -9,7 +9,7 @@ const iconProps = {
   isRound: true,
 };
 
-const Footer = (props) => {
+export default function Footer(props) {
   const year = new Date().getFullYear() || "2021";
   return (
     <Flex
@@ -42,9 +42,9 @@ const Footer = (props) => {
           />
         ))}
       </Stack>
-      <Text>© {year} • Abdirahman Jama</Text>
+      <Box mb={5}>
+        <Text>© {year} • Abdirahman Jama</Text>
+      </Box>
     </Flex>
   );
-};
-
-export default Footer;
+}

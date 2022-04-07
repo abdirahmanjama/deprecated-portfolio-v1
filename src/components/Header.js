@@ -14,15 +14,17 @@ export default function Header() {
 
   return (
     <>
-      <Flex>
+      <Flex
+        width="100%"
+        borderBottomColor={useColorModeValue("white", "blue.900")}
+        boxShadow={"md"}
+      >
         <Flex
           bg={useColorModeValue("white")}
-          width="100vw"
+          width="100%"
           top="1rem"
-          right="1rem"
           alignItems="center"
           justify="flex-end"
-          pr="10"
         >
           <Flex display={["none", "none", "flex", "flex"]} alignItems="center">
             <Link to="/">
@@ -31,11 +33,6 @@ export default function Header() {
               </Button>
             </Link>
 
-            <HashLink smooth to="/#projects">
-              <Button as="a" variant="ghost" aria-label="Blogs" my={5} w="100%">
-                Projects
-              </Button>
-            </HashLink>
             <HashLink smooth to="/#blogs">
               <Button as="a" variant="ghost" aria-label="Blogs" my={5} w="100%">
                 Blogs
@@ -75,7 +72,7 @@ export default function Header() {
         </Flex>
 
         <Flex
-          w="100vw"
+          w="100%"
           h="100vh"
           bgColor={isDark ? "black" : "white"}
           zIndex="200"
@@ -88,7 +85,7 @@ export default function Header() {
           align="center"
           display={toggle}
         >
-          <Flex mt={2} mr={2} size="lg" justify="flex-end">
+          <Flex mt={2} size="lg" justify="flex-end">
             <Flex width="100" direction="column">
               <Flex
                 direction="column"
@@ -119,20 +116,6 @@ export default function Header() {
                 </Button>
               </Link>
 
-              <HashLink to="/#projects">
-                <Button
-                  as="a"
-                  variant="ghost"
-                  aria-label="Projects"
-                  my={5}
-                  w="100%"
-                  onClick={() => {
-                    setToggle("none");
-                  }}
-                >
-                  Projects
-                </Button>
-              </HashLink>
               <HashLink to="/#blogs">
                 <Button
                   as="a"

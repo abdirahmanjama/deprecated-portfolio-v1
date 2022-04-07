@@ -8,16 +8,17 @@ import {
   Text,
 } from "@chakra-ui/layout";
 import { useMediaQuery } from "@chakra-ui/media-query";
+import { Button } from "@chakra-ui/react";
 import { chakra, useColorMode, useColorModeValue } from "@chakra-ui/system";
-import React from "react";
+import React, { useState } from "react";
 import Particles from "react-particles-js";
 import TextTransition, { presets } from "react-text-transition";
 import "./Hero.css";
 
-function Hero() {
+export default function Hero() {
   const bgColor = useColorModeValue("yellow.300", "yellow.300");
   const color = useColorModeValue("black", "black");
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = useState(0);
   const colorMode = useColorMode();
 
   const isDark = colorMode === "dark";
@@ -40,7 +41,7 @@ function Hero() {
       paddingTop={isNotMobile ? 10 : 0}
     >
       <Container maxW="6xl" mb={10} className="container">
-        <Flex position="absolute" width="inherit">
+        <Flex position="absolute" width="inherit" zIndex="-100">
           <Particles
             params={{
               particles: {
@@ -114,5 +115,3 @@ function Hero() {
     </Stack>
   );
 }
-
-export default Hero;

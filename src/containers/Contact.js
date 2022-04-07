@@ -7,7 +7,7 @@ import { useToast } from "@chakra-ui/toast";
 import emailjs from "emailjs-com";
 import React, { useRef, useState } from "react";
 
-function Contact() {
+export default function Contact() {
   const toast = useToast();
   const form = useRef();
   const [subject, setSubject] = useState("");
@@ -59,12 +59,13 @@ function Contact() {
       marginRight="auto"
       maxWidth="72rem"
       mr="0"
-      w="100%"
       mb={10}
+      mt={10}
+      width="100%"
       flexDirection="column"
       id="contact"
     >
-      <Text fontSize="4xl" mb="10px" fontWeight="extrabold">
+      <Text fontSize="3xl" mb="10px" fontWeight="extrabold">
         Contact me
       </Text>
       <form ref={form} onSubmit={sendEmail}>
@@ -131,5 +132,3 @@ function Contact() {
     </Flex>
   );
 }
-
-export default Contact;

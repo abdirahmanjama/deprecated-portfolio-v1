@@ -6,12 +6,11 @@ import Header from "./components/Header";
 import Home from "./containers/Home";
 import React from "react";
 
-function App() {
+export default function App() {
   return (
-    <>
+    <div style={{ overflow: "hidden" }}>
       <Router>
         <VStack maxW="6xl" marginLeft="auto" marginRight="auto" width="80%">
-          <Header />
           <Switch>
             <Route exact path="/">
               <Home />
@@ -22,8 +21,6 @@ function App() {
           <Footer />
         </VStack>
       </Router>
-    </>
+    </div>
   );
 }
-
-export default App;

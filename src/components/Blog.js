@@ -6,7 +6,7 @@ import React from "react";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-function Blog({ title, description, tags, article_url }) {
+export default function Blog({ title, description, tags, article_url }) {
   const { colorMode } = useColorMode();
 
   return (
@@ -54,5 +54,3 @@ Blog.propTypes = {
   article_url: PropTypes.string,
   tags: PropTypes.string,
 };
-
-export default Blog;

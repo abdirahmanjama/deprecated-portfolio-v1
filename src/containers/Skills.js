@@ -6,7 +6,7 @@ import React from "react";
 import { FaAws, FaJava, FaReact } from "react-icons/fa";
 import Skill from "../components/Skill";
 
-function Skills() {
+export default function Skills() {
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
   return (
     <Stack
@@ -62,5 +62,3 @@ function Skills() {
     </Stack>
   );
 }
-
-export default Skills;

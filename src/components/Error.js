@@ -1,7 +1,7 @@
 import { Grid, Text } from "@chakra-ui/layout";
 import React from "react";
 
-function Error() {
+export default function Error() {
   return (
     <>
       <br />
@@ -40,5 +40,3 @@ function Error() {
     </>
   );
 }
-
-export default Error;
