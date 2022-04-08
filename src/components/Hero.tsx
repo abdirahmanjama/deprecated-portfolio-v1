@@ -21,7 +21,7 @@ export default function Hero() {
   const [index, setIndex] = useState(0);
   const colorMode = useColorMode();
 
-  const isDark = colorMode === "dark";
+  const isDark = false;
 
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
@@ -35,7 +35,7 @@ export default function Hero() {
   return (
     <Stack
       as="main"
-      color={useColorModeValue("white, black")}
+      color={useColorModeValue("white, black", "inherit")}
       ml="0"
       paddingTop={isNotMobile ? 10 : 0}
     >

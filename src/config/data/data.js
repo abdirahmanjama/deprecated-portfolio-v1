@@ -67,6 +67,32 @@ const data = {
         "https://towardsaws.com/set-up-a-chatops-notifications-service-within-your-aws-environment-in-5-minutes-using-eventbridge-4e22111d36ee",
     },
   ],
+  projects: [
+    {
+      title: "LinkedIn Clone",
+      desc: `Developed a fully fledged LinkedIn clone that provides authentication and real time messaging.`,
+      tech: "java,redux,firebase,javascript",
+      color: "blue",
+    },
+    {
+      title: "Gmail Clone",
+      desc: `Built a Gmail replica which allows users to view, delete and send e-mails.`,
+      tech: "react,redux,javascript,java",
+      color: "yellow",
+    },
+    {
+      title: "Image Uploader",
+      desc: `Developed an application that enables users to upload images directly to the UI via S3`,
+      tech: "react,aws,java,springboot",
+      color: "green",
+    },
+    {
+      title: "JamaDesigns",
+      desc: `Launched a digital marketing agency that provides tech services to local businesses around east London.`,
+      tech: "react,axios,redux,aws",
+      color: "black",
+    },
+  ],
 };
 
 export default data;

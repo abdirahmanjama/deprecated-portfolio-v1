@@ -19,7 +19,7 @@ export default function Header() {
         boxShadow={"md"}
       >
         <Flex
-          bg={useColorModeValue("white")}
+          bg={useColorModeValue("white", "inherit")}
           width="100%"
           top="1rem"
           alignItems="center"
@@ -46,8 +46,9 @@ export default function Header() {
           </Flex>
 
           <IconButton
+            aria-label="icon"
             icon={isDark ? <FaSun /> : <FaMoon />}
-            isRound="true"
+            isRound={true}
             outline="none !important"
             border="none !important"
             boxShadow="none !important"
@@ -92,6 +93,7 @@ export default function Header() {
                 display={["flex", "flex", "flex", "flex"]}
               >
                 <IconButton
+                  aria-label="icon"
                   display={["flex", "flex", "none", "none"]}
                   onClick={() => {
                     setToggle("none");

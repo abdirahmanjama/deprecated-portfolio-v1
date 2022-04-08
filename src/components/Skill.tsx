@@ -1,9 +1,13 @@
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { Box, HStack, Text, VStack } from "@chakra-ui/layout";
 import React from "react";
-import PropTypes from "prop-types";
 
-export default function Skill({ name, icon, description }) {
+interface Props {
+  name: string;
+  icon: any;
+  description: string;
+}
+export default function Skill({ name, icon, description }: Props) {
   return (
     <Box>
       <HStack
@@ -24,11 +28,11 @@ export default function Skill({ name, icon, description }) {
           maxW="lg"
           h="100%"
         >
-          <VStack spacing={0} align="start" flexGrow="1">
+          <VStack spacing={0} align="start" flexGrow={1}>
             <Text fontWeight="bold" fontSize="md" noOfLines={2}>
               {name}
             </Text>
-            <Text fontSize="sm" color={useColorModeValue("black")}>
+            <Text fontSize="sm" color={useColorModeValue("black", "inherit")}>
               {description}
             </Text>
           </VStack>
@@ -37,9 +41,3 @@ export default function Skill({ name, icon, description }) {
     </Box>
   );
 }
-
-Skill.propTypes = {
-  name: PropTypes.string,
-  description: PropTypes.string,
-  icon: PropTypes.element,
-};
