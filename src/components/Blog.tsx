@@ -4,7 +4,6 @@ import { Box, Flex, Spacer, Stack, Text } from "@chakra-ui/layout";
 import { Tag } from "@chakra-ui/tag";
 import React from "react";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
-import PropTypes from "prop-types";
 
 interface Props {
   title: string;

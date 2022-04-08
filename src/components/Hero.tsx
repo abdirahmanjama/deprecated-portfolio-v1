@@ -8,30 +8,25 @@ import {
   Text,
 } from "@chakra-ui/layout";
 import { useMediaQuery } from "@chakra-ui/media-query";
-import { chakra, useColorMode, useColorModeValue } from "@chakra-ui/system";
-import React, { useState } from "react";
+import { chakra, useColorModeValue } from "@chakra-ui/system";
+import React, { useState, useEffect } from "react";
 import Particles from "react-particles-js";
 import TextTransition, { presets } from "react-text-transition";
 import "./Hero.css";
 import data from "../config/data/data";
-import { Button } from "@chakra-ui/button";
+
 export default function Hero() {
   const bgColor = useColorModeValue("yellow.300", "yellow.300");
   const color = useColorModeValue("black", "black");
   const [index, setIndex] = useState(0);
-  const colorMode = useColorMode();
-
   const isDark = false;
-
   const [isNotMobile] = useMediaQuery("(min-width:760px)");
 
-  React.useEffect(() => {
-    const intervalId = setInterval(
-      () => setIndex((index) => index + 1),
-      3000 // every 3 seconds
-    );
+  useEffect(() => {
+    const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
     return () => clearTimeout(intervalId);
   }, []);
+
   return (
     <Stack
       as="main"
