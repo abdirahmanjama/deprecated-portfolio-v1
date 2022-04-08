@@ -1,15 +1,8 @@
 import React from "react";
 import { Stack, IconButton, Link, Flex, Text, Box } from "@chakra-ui/react";
-
 import data from "../config/data/data";
 
-const iconProps = {
-  variant: "ghost",
-  size: "lg",
-  isRound: true,
-};
-
-export default function Footer(props) {
+export default function Footer() {
   const year = new Date().getFullYear() || "2021";
   return (
     <Flex
@@ -25,7 +18,6 @@ export default function Footer(props) {
         p={4}
         justifyContent="center"
         alignItems="center"
-        {...props}
       >
         {data.author.accounts.map((sc, i) => (
           <IconButton
@@ -35,15 +27,18 @@ export default function Footer(props) {
             isExternal
             href={sc.url}
             aria-label={sc.label}
-            size="lg"
             colorScheme={sc.type}
             icon={sc.icon}
-            {...iconProps}
+            variant="ghost"
+            size="lg"
+            isRound={true}
           />
         ))}
       </Stack>
       <Box mb={5}>
-        <Text>© {year} • Abdirahman Jama</Text>
+        <Text>
+          © {year} • {data.author.name}
+        </Text>
       </Box>
     </Flex>
   );
