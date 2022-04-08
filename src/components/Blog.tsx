@@ -6,7 +6,14 @@ import React from "react";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-export default function Blog({ title, description, tags, article_url }) {
+interface Props {
+  title: string;
+  description: string;
+  tags: string;
+  article_url: string;
+}
+
+export default function Blog({ title, description, tags, article_url }: Props) {
   const { colorMode } = useColorMode();
 
   return (
@@ -25,6 +32,7 @@ export default function Blog({ title, description, tags, article_url }) {
         <Spacer />
 
         <IconButton
+          aria-label="link to article"
           as={FaExternalLinkSquareAlt}
           size="25px"
           width="1.5rem"
@@ -54,10 +62,3 @@ export default function Blog({ title, description, tags, article_url }) {
     </Box>
   );
 }
-
-Blog.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  article_url: PropTypes.string,
-  tags: PropTypes.string,
-};
